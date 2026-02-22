@@ -1,0 +1,19 @@
+{
+  "id": "material-files",
+  "name": "Material Files",
+  "category": "Utilities",
+  "icon": "/icons/material-files.png",
+  "description": "A modern and minimal file manager with Material Design, focused on simplicity and fast navigation without ads or trackers.",
+  "source": "https://github.com/zhanghai/MaterialFiles",
+  "downloadUrl": "https://github.com/zhanghai/MaterialFiles/releases/download/v1.7.4/app-release-universal.apk",
+  "releaseTag": "v1.7.4",
+  "sha256": null,
+  "lastUpdated": "2026-02-21",
+  "featured": false,
+  "tags": [
+    "file-manager",
+    "utilities",
+    "material-design",
+    "open-source"
+  ]
+}

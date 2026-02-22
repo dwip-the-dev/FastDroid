@@ -1,0 +1,14 @@
+{
+  "id": "afwall-plus",
+  "name": "AFWall+",
+  "category": "Security",
+  "icon": "/icons/afwall-plus.png",
+  "description": "A firewall manager that lets you control network access on a per-app basis. Requires root for full features.",
+  "source": "https://github.com/ukanth/afwall",
+  "downloadUrl": "https://github.com/ukanth/afwall/releases/download/v4.0.1/AFWall_4.0.1_Free.apk",
+  "releaseTag": "v4.0.1",
+  "sha256": null,
+  "lastUpdated": "2026-02-21",
+  "featured": false,
+  "tags": ["firewall", "security", "network", "open-source"]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "openboard",
+  "name": "OpenBoard",
+  "category": "Utilities",
+  "icon": "/icons/openboard.png",
+  "description": "An open-source keyboard app focused on privacy, simplicity, and reliability without unnecessary permissions.",
+  "source": "https://github.com/openboard-team/openboard",
+  "downloadUrl": "https://github.com/openboard-team/openboard/releases/download/v1.4.5/app-release.apk",
+  "releaseTag": "v1.4.5",
+  "sha256": null,
+  "lastUpdated": "2026-02-21",
+  "featured": false,
+  "tags": ["keyboard", "input", "open-source", "privacy", "utilities"]
+}

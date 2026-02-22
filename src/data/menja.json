@@ -1,0 +1,14 @@
+{
+  "id": "menja",
+  "name": "Menja",
+  "category": "Games",
+  "icon": "/icons/menja.png",
+  "description": "A fast-paced arcade game inspired by Fruit Ninja. Slice, dodge, and chase high scores with simple controls and no distractions.",
+  "source": "https://github.com/dwip-the-dev/my-apps",
+  "downloadUrl": "https://github.com/dwip-the-dev/my-apps/releases/download/V1/Menja.apk",
+  "releaseTag": "V1",
+  "sha256": null,
+  "lastUpdated": "2026-02-21",
+  "featured": true,
+  "tags": ["game", "arcade", "casual", "offline"]
+}

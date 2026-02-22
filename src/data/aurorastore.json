@@ -1,0 +1,21 @@
+{
+  "id": "aurorastore",
+  "name": "Aurora Store",
+  "category": "Utilities",
+  "icon": "/icons/aurorastore.png",
+  "description": "An open-source alternative client for Google Play that allows browsing and downloading apps anonymously, without requiring a Google account or Google Play Services.",
+  "source": "https://gitlab.com/AuroraOSS/AuroraStore",
+  "downloadUrl": "https://gitlab.com/-/project/6922885/uploads/2ee95ec85244b45cc860b63ec7a10ad6/AuroraStore-4.8.1.apk",
+  "releaseTag": "4.8.1",
+  "sha256": null,
+  "lastUpdated": "2026-02-21",
+  "featured": false,
+  "tags": [
+    "play-store",
+    "app-store",
+    "open-source",
+    "privacy",
+    "anonymous",
+    "utilities"
+  ]
+}

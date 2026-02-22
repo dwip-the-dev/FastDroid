@@ -1,0 +1,20 @@
+{
+  "id": "kiwi-browser",
+  "name": "Kiwi Browser",
+  "category": "Internet",
+  "icon": "/icons/kiwi-browser.png",
+  "description": "A Chromium-based open-source browser with built-in ad blocking, extension support, and privacy features. Designed for fast browsing without trackers and bloat.",
+  "source": "https://github.com/kiwibrowser/src",
+  "downloadUrl": "https://github.com/kiwibrowser/src/releases/download/1019022375/Kiwi-1019022375-arm64-playstore.apk",
+  "releaseTag": "1019022375",
+  "sha256": null,
+  "lastUpdated": "2026-02-21",
+  "featured": false,
+  "tags": [
+    "browser",
+    "internet",
+    "open-source",
+    "privacy",
+    "ad-blocking"
+  ]
+}

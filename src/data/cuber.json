@@ -1,0 +1,14 @@
+{
+  "id": "cuber",
+  "name": "Cuber",
+  "category": "Games",
+  "icon": "/icons/cuber.png",
+  "description": "A 3D Rubik’s Cube puzzle game with smooth controls and realistic cube rotations. Practice solves, experiment freely, and challenge your spatial thinking.",
+  "source": "https://github.com/dwip-the-dev/my-apps",
+  "downloadUrl": "https://github.com/dwip-the-dev/my-apps/releases/download/V1/Cuber.apk",
+  "releaseTag": "V1",
+  "sha256": null,
+  "lastUpdated": "2026-02-21",
+  "featured": false,
+  "tags": ["game", "puzzle", "3d", "rubiks-cube", "offline"]
+}

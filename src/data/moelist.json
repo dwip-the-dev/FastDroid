@@ -1,0 +1,22 @@
+{
+  "id": "moelist",
+  "name": "MoeList",
+  "category": "Entertainment",
+  "icon": "/icons/moelist.png",
+  "description": "An open-source anime and manga tracking app with support for airing notifications, seasonal calendars, recommendations, character details, and personal statistics. Includes light/dark themes, dynamic color support, and optional NSFW filtering.",
+  "source": "https://github.com/axiel7/MoeList",
+  "downloadUrl": "https://github.com/axiel7/MoeList/releases/download/v3.8.0/moelist-v3.8.0-universal-release.apk",
+  "releaseTag": "v3.8.0",
+  "sha256": null,
+  "lastUpdated": "2026-02-21",
+  "featured": true,
+  "tags": [
+    "anime",
+    "manga",
+    "tracking",
+    "notifications",
+    "calendar",
+    "recommendations",
+    "open-source"
+  ]
+}

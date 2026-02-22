@@ -1,0 +1,14 @@
+{
+  "id": "librera-reader",
+  "name": "Librera Reader",
+  "category": "Books",
+  "icon": "/icons/librera-reader.png",
+  "description": "A flexible document reader supporting many formats such as PDF, EPUB, MOBI, and more, with customizable reading options.",
+  "source": "https://github.com/foobnix/LibreraReader",
+  "downloadUrl": "https://github.com/foobnix/LibreraReader/releases/download/9.3.55/Librera.Fdroid-9.3.55-uni.apk",
+  "releaseTag": "9.3.55",
+  "sha256": null,
+  "lastUpdated": "2026-02-21",
+  "featured": false,
+  "tags": ["books", "reader", "documents", "utility", "open-source"]
+}

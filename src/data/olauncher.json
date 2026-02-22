@@ -1,0 +1,14 @@
+{
+  "id": "olauncher",
+  "name": "Olauncher",
+  "category": "Personalization",
+  "icon": "/icons/olauncher.png",
+  "description": "A minimal, gesture-based launcher for Android designed for simplicity and speed.",
+  "source": "https://github.com/tanujnotes/Olauncher",
+  "downloadUrl": "https://github.com/tanujnotes/Olauncher/releases/download/v6.2.18/Olauncher-v6.2.18.apk",
+  "releaseTag": "v6.2.18",
+  "sha256": null,
+  "lastUpdated": "2026-02-21",
+  "featured": false,
+  "tags": ["launcher", "personalization", "minimal", "open-source"]
+}

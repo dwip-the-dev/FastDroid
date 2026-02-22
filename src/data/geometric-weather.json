@@ -1,0 +1,18 @@
+{
+  "id": "geometric-weather",
+  "name": "GeometricWeather",
+  "category": "Weather",
+  "icon": "/icons/geometric-weather.png",
+  "description": "A weather app displaying forecast and conditions using geometric UI elements with data from trusted sources.",
+  "source": "https://github.com/WangDaYeeeeee/GeometricWeather",
+  "downloadUrl": "https://github.com/WangDaYeeeeee/GeometricWeather/releases/download/3.013/GeometricWeather.3.013_fdroid.apk",
+  "releaseTag": "3.013",
+  "sha256": null,
+  "lastUpdated": "2026-02-21",
+  "featured": false,
+  "tags": [
+    "weather",
+    "forecast",
+    "open-source"
+  ]
+}

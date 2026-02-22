@@ -1,0 +1,20 @@
+{
+  "id": "signal",
+  "name": "Signal",
+  "category": "Communication",
+  "icon": "/icons/signal.png",
+  "description": "A secure, privacy-focused messaging and calling app with end-to-end encryption.",
+  "source": "https://github.com/signalapp/Signal-Android",
+  "downloadUrl": "https://github.com/signalapp/Signal-Android/releases/download/v7.73.2/Signal-Android-github-prod-universal-release-7.73.2.apk",
+  "releaseTag": "v7.73.2",
+  "sha256": null,
+  "lastUpdated": "2026-02-21",
+  "featured": false,
+  "tags": [
+    "messaging",
+    "communication",
+    "privacy",
+    "security",
+    "open-source"
+  ]
+}
