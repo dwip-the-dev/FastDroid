@@ -2,7 +2,7 @@
   "id": "nihonoari",
   "name": "Nihonoari",
   "category": "Utilities",
-  "icon": "/icons/nihonoari.png",
+  "icon": "https://f-droid.org/repo/com.LAPARCELA.nihonoari/en-US/icon_9CvPdJt9duGZt0TnDPnDWQ4H9VWRi6BblekkjHsiiSs=.png",
   "description": "An open-source app offering a range of utilities and features usable directly on-device.",
   "source": "https://github.com/aeri/Nihonoari-App",
   "downloadUrl": "https://github.com/aeri/Nihonoari-App/releases/download/v1.8.0/nihonoari-v1.8.0-arm64-v8a-release.apk",

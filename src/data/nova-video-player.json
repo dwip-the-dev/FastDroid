@@ -2,7 +2,7 @@
   "id": "nova-video-player",
   "name": "Nova Video Player",
   "category": "Media",
-  "icon": "/icons/nova-video-player.png",
+  "icon": "https://play-lh.googleusercontent.com/e8Bx0rLVoLdeCxnKlicIfAGaCKCOhhFxKSM2H8RlQzGeX9A4VvVa0A6vexKhVBNk3MM=w240-h480-rw",
   "description": "A powerful open-source video player supporting many formats, playlists, and hardware acceleration, built for smooth media playback.",
   "source": "https://github.com/nova-video-player/aos-AVP",
   "downloadUrl": "https://github.com/nova-video-player/aos-AVP/releases/download/v6.4.28/org.courville.nova-2651765-6.4.28-20260216.1145-arm64-v8a-release.apk",

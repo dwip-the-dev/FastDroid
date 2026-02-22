@@ -2,7 +2,7 @@
   "id": "omni-notes",
   "name": "Omni Notes",
   "category": "Productivity",
-  "icon": "/icons/omni-notes.png",
+  "icon": "https://play-lh.googleusercontent.com/KEKTKfmJxEQoHB7GwxXxfYUQd0VjFDqsnm8EI8gm2PXiKNA6bcKsNrMw1KazzdVv0ME",
   "description": "An easy-to-use, open-source notes app with rich text, categories, reminders, and tags — great for organizing thoughts and tasks.",
   "source": "https://github.com/federicoiosue/Omni-Notes",
   "downloadUrl": "https://github.com/federicoiosue/Omni-Notes/releases/download/6.3.1/OmniNotes-playRelease-6.3.1.apk",

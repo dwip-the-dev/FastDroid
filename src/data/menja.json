@@ -2,7 +2,7 @@
   "id": "menja",
   "name": "Menja",
   "category": "Games",
-  "icon": "/icons/menja.png",
+  "icon": "https://cdn-1.webcatalog.io/catalog/poki-menja-game/poki-menja-game-icon-filled-256.png?v=1714783158980",
   "description": "A fast-paced arcade game inspired by Fruit Ninja. Slice, dodge, and chase high scores with simple controls and no distractions.",
   "source": "https://github.com/dwip-the-dev/my-apps",
   "downloadUrl": "https://github.com/dwip-the-dev/my-apps/releases/download/V1/Menja.apk",

@@ -2,7 +2,7 @@
   "id": "simple-calendar",
   "name": "Simple Calendar",
   "category": "Productivity",
-  "icon": "/icons/simple-calendar.png",
+  "icon": "https://simplemobiletools.com/images/simplecalendar/icon.png",
   "description": "A lightweight, open-source calendar app that lets you manage events and reminders without ads or trackers. Designed for simplicity and privacy.",
   "source": "https://github.com/SimpleMobileTools/Simple-Calendar",
   "downloadUrl": "https://github.com/SimpleMobileTools/Simple-Calendar/releases/download/6.23.1/calendar-fdroid-release.apk",

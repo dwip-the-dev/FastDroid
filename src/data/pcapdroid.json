@@ -1,8 +1,8 @@
 {
   "id": "pcapdroid",
-  "name": "PCAPdroid",
+  "name": "PCAPDroid",
   "category": "Networking",
-  "icon": "/icons/pcapdroid.png",
+  "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3XgVhNPo8_pu-ZnDyUp8Wr2DD_l71f5Q0GYP-ej7xgQ&s=10",
   "description": "A network monitoring app capturing traffic locally without root, providing PCAP export and real-time insights.",
   "source": "https://github.com/emanuele-f/PCAPdroid",
   "downloadUrl": "https://github.com/emanuele-f/PCAPdroid/releases/download/v1.9.0/PCAPdroid_v1.9.0.apk",

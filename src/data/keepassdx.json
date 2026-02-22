@@ -2,7 +2,7 @@
   "id": "keepassdx",
   "name": "KeePassDX",
   "category": "Security",
-  "icon": "/icons/keepassdx.png",
+  "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbViXzwfndOybps2vgA-IdimSaaVI2fm6FMR1HyEKhVg&s=10",
   "description": "An open-source KeePass database manager for Android. Manage your secure passwords offline with support for multiple database formats.",
   "source": "https://github.com/Kunzisoft/KeePassDX",
   "downloadUrl": "https://github.com/Kunzisoft/KeePassDX/releases/download/4.3.2/KeePassDX-4.3.2-free.apk",

@@ -2,7 +2,7 @@
   "id": "fdroid",
   "name": "F-Droid",
   "category": "Utilities",
-  "icon": "/icons/fdroid.png",
+  "icon": "https://f-droid.org/assets/fdroid-logo_bfHl7nsLHOUQxzdU8-rGIhn4bAgl6z7k2mA3fWoCyT4=.png",
   "description": "The official F-Droid client for discovering, installing, and updating free and open-source Android apps. Provides access to the F-Droid repository with reproducible builds and transparent metadata.",
   "source": "https://gitlab.com/fdroid/fdroidclient",
   "downloadUrl": "https://gitlab.com/fdroid/fdroidclient/-/package_files/204739018/download",

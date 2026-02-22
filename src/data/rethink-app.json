@@ -2,7 +2,7 @@
   "id": "rethink-app",
   "name": "Rethink App",
   "category": "Utilities",
-  "icon": "/icons/rethink-app.png",
+  "icon": "https://rethinkdns.com/ico/app_icon_Light.svg",
   "description": "A toolkit for configuring network and system parameters on Android, useful for power users and privacy-focused workflows.",
   "source": "https://github.com/celzero/rethink-app",
   "downloadUrl": "https://github.com/celzero/rethink-app/releases/download/v0.5.5n/rethink-45.apk",

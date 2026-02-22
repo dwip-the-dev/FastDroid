@@ -2,7 +2,7 @@
   "id": "gitjournal",
   "name": "GitJournal",
   "category": "Productivity",
-  "icon": "/icons/gitjournal.png",
+  "icon": "https://www.noteapps.ca/content/images/2022/03/GitJournal-logo.png",
   "description": "A markdown journaling app that syncs notes through Git repositories, combining version control with rich text journaling.",
   "source": "https://github.com/GitJournal/GitJournal",
   "downloadUrl": "https://github.com/GitJournal/GitJournal/releases/download/v1.80.0/GitJournal-android.apk",

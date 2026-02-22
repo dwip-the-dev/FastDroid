@@ -2,7 +2,7 @@
   "id": "loop-habits",
   "name": "Loop Habits",
   "category": "Health",
-  "icon": "/icons/loop-habits.png",
+  "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCTAfzRlQAlStaacYYMdTZeLmJhxU53jIBKVlB7YJx8g&s=10",
   "description": "A simple, open-source habit tracker to help you build and maintain good habits with charts and reminders.",
   "source": "https://github.com/iSoron/uhabits",
   "downloadUrl": "https://github.com/iSoron/uhabits/releases/download/v2.3.1/loop-2.3.1-release.apk",

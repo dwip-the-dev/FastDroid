@@ -2,7 +2,7 @@
   "id": "positional",
   "name": "Positional",
   "category": "Tools",
-  "icon": "/icons/positional.png",
+  "icon": "https://raw.githubusercontent.com/Hamza417/Positional/refs/heads/master/app/src/main/assets/svg/icon.svg",
   "description": "A utility app focused on positional tracking, coordinates, and GPS-based tools for navigation and utility use.",
   "source": "https://github.com/Hamza417/Positional",
   "downloadUrl": "https://github.com/Hamza417/Positional/releases/download/v181.0.30/app-full-release.apk",

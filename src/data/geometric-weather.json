@@ -2,7 +2,7 @@
   "id": "geometric-weather",
   "name": "GeometricWeather",
   "category": "Weather",
-  "icon": "/icons/geometric-weather.png",
+  "icon": "https://s.cafebazaar.ir/images/icons/wangdaye.com.geometricweather-103c16ab-7e32-4ef3-9420-aaff514514e4_512x512.png?x-img=v1/resize,h_256,w_256,lossless_false/optimize",
   "description": "A weather app displaying forecast and conditions using geometric UI elements with data from trusted sources.",
   "source": "https://github.com/WangDaYeeeeee/GeometricWeather",
   "downloadUrl": "https://github.com/WangDaYeeeeee/GeometricWeather/releases/download/3.013/GeometricWeather.3.013_fdroid.apk",

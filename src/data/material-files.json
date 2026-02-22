@@ -2,7 +2,7 @@
   "id": "material-files",
   "name": "Material Files",
   "category": "Utilities",
-  "icon": "/icons/material-files.png",
+  "icon": "https://f-droid.org/repo/me.zhanghai.android.files/en-US/icon_BFY8kIAZkrB0kKwXt1uVDgghMociormUlcOIedEh2mA=.png",
   "description": "A modern and minimal file manager with Material Design, focused on simplicity and fast navigation without ads or trackers.",
   "source": "https://github.com/zhanghai/MaterialFiles",
   "downloadUrl": "https://github.com/zhanghai/MaterialFiles/releases/download/v1.7.4/app-release-universal.apk",

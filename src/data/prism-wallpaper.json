@@ -2,7 +2,7 @@
   "id": "prism-wallpaper",
   "name": "Prism Wallpaper",
   "category": "Personalization",
-  "icon": "/icons/prism-wallpaper.png",
+  "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgnTUfU7FqMKzZbERJRhOfu4S8mE9x4iGnaZHAgG2nHw&s=10",
   "description": "A stylish wallpaper app featuring unique designs and dynamic backgrounds. Browse, set, and customize wallpapers with an intuitive UI and high-quality visual assets.",
   "source": "https://github.com/Hash-Studios/Prism",
   "downloadUrl": "https://github.com/Hash-Studios/Prism/releases/download/v2.6.9/app-arm64-v8a-release.apk",

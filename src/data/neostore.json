@@ -2,7 +2,7 @@
   "id": "neostore",
   "name": "Neo Store",
   "category": "Utilities",
-  "icon": "/icons/neostore.png",
+  "icon": "https://f-droid.org/repo/com.machiav3lli.fdroid/en-US/icon_MDlGcc6y5jvKKUH6GKQqhJdcbIZBwVXVBElBcoczxDg=.png",
   "description": "Neo Store is a modern, lightweight Android app marketplace alternative that lets you browse and install Android apps without using the Play Store. Designed with simplicity and user experience in mind.",
   "source": "https://github.com/NeoApplications/Neo-Store",
   "downloadUrl": "https://github.com/NeoApplications/Neo-Store/releases/download/1.2.4/Neo_Store_1.2.4_release.apk",
