@@ -7,7 +7,7 @@ import AboutDialog from "@/components/store/AboutDialog";
 import CategoryGrid from "@/components/store/CategoryGrid";
 import type { AppData } from "@/types/app";
 
-const APPS_PER_PAGE = 15;
+const APPS_PER_PAGE = 30;
 
 const modules = import.meta.glob("@/data/*.json", { eager: true, import: "default" });
 
