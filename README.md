@@ -197,7 +197,7 @@ Individual apps listed in the catalog are licensed by their respective authors.
 <p align="center">
   <b>Fast, transparent, open-source Android app discovery.</b>
   <br />
-  <a href="https://fastdroid.vercel.com/">🌐 Website</a> •
+  <a href="https://fastdroid.vercel.app/">🌐 Website</a> •
   <a href="https://github.com/dwip-the-dev/FastDroid">🐙 GitHub</a> •
   <a href="https://github.com/dwip-the-dev/FastDroid/issues">🐛 Report Issue</a>
   <br /><br />
