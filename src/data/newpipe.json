@@ -2,7 +2,7 @@
   "id": "newpipe",
   "name": "NewPipe",
   "category": "Media",
-  "icon": "/icons/newpipe.png",
+  "icon": "https://newpipe.net/img/logo.svg",
   "description": "A privacy-focused YouTube frontend that lets you watch, download, and stream videos without ads or Google Play dependencies.",
   "source": "https://github.com/TeamNewPipe/NewPipe",
   "downloadUrl": "https://github.com/TeamNewPipe/NewPipe/releases/download/v0.28.3/NewPipe_v0.28.3.apk",
