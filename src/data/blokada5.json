@@ -2,7 +2,7 @@
   "id": "blokada5",
   "name": "Blokada5",
   "category": "Security",
-  "icon": "/icons/blokada5.png",
+  "icon": "https://blokada.org/img/blokada-thumb.png",
   "description": "A privacy and ad-blocking app for Android that filters ads and trackers using DNS-level blocking.",
   "source": "https://github.com/blokadaorg/blokada",
   "downloadUrl": "https://github.com/blokadaorg/blokada/releases/download/android.v5.23.2.1/blokada5-android.v5.23.2.1.apk",
