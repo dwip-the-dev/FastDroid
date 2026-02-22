@@ -86,7 +86,9 @@ We accept submissions via GitHub Pull Requests only.
 2. Create a new branch (`your-app-name`)
 3. Add:
     * JSON file in `src/data/` (see format above)
-    * 512×512 PNG icon in `public/icons/` (optional but recommended)
+    * 512×512 PNG icon in `public/icons/` (optional)
+    * Or just link your app icon the icon field
+    * ``` "icon": "https://newpipe.net/img/logo.svg" ``` (recommended)
 4. Open a Pull Request
 
 All submissions are reviewed manually within 48 hours.
