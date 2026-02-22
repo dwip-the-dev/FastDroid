@@ -2,7 +2,7 @@
   "id": "auroradroid",
   "name": "Aurora Droid",
   "category": "Utilities",
-  "icon": "/icons/auroradroid.png",
+  "icon": "https://gitlab.com/uploads/-/system/project/avatar/12469948/icon.png",
   "description": "An open-source client for browsing and downloading apps from the F-Droid repository with a modern UI, fast syncing, and optional anonymous usage.",
   "source": "https://gitlab.com/AuroraOSS/auroradroid",
   "downloadUrl": "https://gitlab.com/-/project/12469948/uploads/d925b3b4c054df7535b93895c199159f/AuroraDroid_1.0.8.apk",
