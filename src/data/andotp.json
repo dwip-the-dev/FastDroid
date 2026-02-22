@@ -2,7 +2,7 @@
   "id": "andotp",
   "name": "andOTP",
   "category": "Security",
-  "icon": "/icons/andotp.png",
+  "icon": "https://cdn.aptoide.com/imgs/7/1/c/71c1a26a0964714f19e44e09b287e838_icon.png",
   "description": "A secure open-source two-factor authentication (2FA) app with encrypted backups and privacy-focused design.",
   "source": "https://github.com/andOTP/andOTP",
   "downloadUrl": "https://github.com/andOTP/andOTP/releases/download/v0.9.0.1/andOTP_v0.9.0.1.apk",
