@@ -1,218 +1,160 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useCallback } from "react";
 import TopBar from "@/components/store/TopBar";
 import AppCard from "@/components/store/AppCard";
 import AppDetailPanel from "@/components/store/AppDetailPanel";
 import Footer from "@/components/store/Footer";
-import { AlertTriangle } from "lucide-react";
+import AboutDialog from "@/components/store/AboutDialog";
+import type { AppData } from "@/types/app";
 
-/* =========================
-   Types
-========================= */
+const APPS_PER_PAGE = 15;
 
-interface AppData {
-  id: string;
-  name: string;
-  category: string;
-  icon: string;
-  description: string;
-  source: string;
-  downloadUrl?: string;
-  releaseTag: string;
-  sha256: string | null;
-  lastUpdated: string;
-  featured: boolean;
-  tags: string[];
+/* Dynamic import of all app JSONs */
+const modules = import.meta.glob("@/data/*.json", { eager: true, import: "default" });
+
+const allApps: AppData[] = (Object.values(modules) as AppData[]).filter(
+  (app) => app && app.id && app.name
+);
+
+/* Seeded shuffle — deterministic per session but random-looking */
+function shuffleArray<T>(arr: T[]): T[] {
+  const shuffled = [...arr];
+  let seed = Date.now() % 10000;
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    seed = (seed * 16807 + 11) % 2147483647;
+    const j = seed % (i + 1);
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
 }
 
-/* =========================
-   Dynamic App Import (Vite)
-========================= */
+const shuffledApps = shuffleArray(allApps);
 
-// Loads ALL json files inside src/data/*.json
-const modules = import.meta.glob("@/data/*.json", {
-  eager: true,
-  import: "default",
-});
-
-const apps: AppData[] = (Object.values(modules) as AppData[])
-  // basic sanity filter
-  .filter((app) => app && app.id && app.name)
-  // stable ordering
-  .sort((a, b) => {
-    if (a.featured && !b.featured) return -1;
-    if (!a.featured && b.featured) return 1;
-    return a.name.localeCompare(b.name);
-  });
-
-/* =========================
-   Page Component
-========================= */
+/* Extract unique categories */
+const categories = ["All", ...Array.from(new Set(allApps.map((a) => a.category))).sort()];
 
 const Index = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedApp, setSelectedApp] = useState<AppData | null>(null);
-  const [activeTab, setActiveTab] = useState("all");
+  const [activeCategory, setActiveCategory] = useState("All");
+  const [currentPage, setCurrentPage] = useState(1);
+  const [aboutOpen, setAboutOpen] = useState(false);
 
   const isSearching = searchQuery.trim().length > 0;
 
   const filteredApps = useMemo(() => {
-    if (!isSearching) return apps;
+    let list = shuffledApps;
 
-    const q = searchQuery.toLowerCase();
+    if (activeCategory !== "All") {
+      list = list.filter((a) => a.category === activeCategory);
+    }
 
-    return apps.filter(
-      (app) =>
-        app.name.toLowerCase().includes(q) ||
-        app.category.toLowerCase().includes(q) ||
-        app.description.toLowerCase().includes(q) ||
-        app.tags.some((tag) => tag.toLowerCase().includes(q))
-    );
-  }, [searchQuery, isSearching]);
-
-  const featured = useMemo(
-    () => apps.filter((a) => a.featured),
-    []
-  );
-
-  const renderContent = () => {
     if (isSearching) {
-      return (
-        <section>
-          <h2 className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-3">
-            {filteredApps.length} result
-            {filteredApps.length !== 1 ? "s" : ""} for "{searchQuery}"
-          </h2>
-
-          <div className="space-y-1">
-            {filteredApps.map((app) => (
-              <AppCard
-                key={app.id}
-                app={app}
-                onClick={() => setSelectedApp(app)}
-              />
-            ))}
-
-            {filteredApps.length === 0 && (
-              <p className="text-sm text-muted-foreground py-8 text-center">
-                No apps found. Try a different search.
-              </p>
-            )}
-          </div>
-        </section>
+      const q = searchQuery.toLowerCase();
+      list = list.filter(
+        (a) =>
+          a.name.toLowerCase().includes(q) ||
+          a.category.toLowerCase().includes(q) ||
+          a.description.toLowerCase().includes(q) ||
+          a.tags.some((t) => t.toLowerCase().includes(q))
       );
     }
 
-    switch (activeTab) {
-      case "featured":
-        return (
-          <section>
-            <h2 className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-3">
-              Hot Picks
-            </h2>
+    return list;
+  }, [searchQuery, isSearching, activeCategory]);
 
-            <div className="space-y-1">
-              {featured.map((app) => (
-                <AppCard
-                  key={app.id}
-                  app={app}
-                  onClick={() => setSelectedApp(app)}
-                />
-              ))}
+  const totalPages = Math.max(1, Math.ceil(filteredApps.length / APPS_PER_PAGE));
+  const safePage = Math.min(currentPage, totalPages);
 
-              {featured.length === 0 && (
-                <p className="text-sm text-muted-foreground py-8 text-center">
-                  No featured apps yet.
-                </p>
-              )}
-            </div>
-          </section>
-        );
+  const paginatedApps = useMemo(
+    () => filteredApps.slice((safePage - 1) * APPS_PER_PAGE, safePage * APPS_PER_PAGE),
+    [filteredApps, safePage]
+  );
 
-      case "disclaimer":
-        return (
-          <div className="rounded-xl bg-card border border-border p-6 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-destructive/10 flex items-center justify-center">
-                <AlertTriangle className="w-5 h-5 text-destructive" />
-              </div>
-              <h2 className="text-lg font-semibold text-foreground">
-                Disclaimer
-              </h2>
-            </div>
+  const handleCategoryChange = useCallback((cat: string) => {
+    setActiveCategory(cat);
+    setCurrentPage(1);
+  }, []);
 
-            <div className="space-y-3 text-sm text-muted-foreground leading-relaxed">
-              <p>
-                <strong className="text-foreground">
-                  FastDroid does not host any APK files.
-                </strong>{" "}
-                All download links point directly to the original developer’s
-                release pages (typically GitHub Releases).
-              </p>
+  const handleSearchChange = useCallback((q: string) => {
+    setSearchQuery(q);
+    setCurrentPage(1);
+  }, []);
 
-              <p>
-                We act solely as a directory and discovery service. The actual
-                software is downloaded from the developer’s own infrastructure.
-              </p>
+  /* Swipe support */
+  const [touchStart, setTouchStart] = useState<number | null>(null);
 
-              <p>
-                FastDroid is not affiliated with F-Droid, Google Play, or any
-                other app distribution platform. We are an independent,
-                community-driven project.
-              </p>
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setTouchStart(e.touches[0].clientX);
+  };
 
-              <p>
-                While we manually review every listed app, we make no guarantees
-                about the safety, functionality, or legality of any software
-                linked from this site.{" "}
-                <strong className="text-foreground">
-                  Install at your own risk.
-                </strong>
-              </p>
-
-              <p>
-                SHA-256 hashes are provided where available to help verify
-                download integrity. Always review the source code before
-                installing.
-              </p>
-            </div>
-          </div>
-        );
-
-      default:
-        return (
-          <section>
-            <h2 className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-3">
-              All Apps
-            </h2>
-
-            <div className="space-y-1">
-              {apps.map((app) => (
-                <AppCard
-                  key={app.id}
-                  app={app}
-                  onClick={() => setSelectedApp(app)}
-                />
-              ))}
-            </div>
-          </section>
-        );
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    if (touchStart === null) return;
+    const diff = touchStart - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 60) {
+      if (diff > 0 && safePage < totalPages) {
+        setCurrentPage(safePage + 1);
+      } else if (diff < 0 && safePage > 1) {
+        setCurrentPage(safePage - 1);
+      }
     }
+    setTouchStart(null);
   };
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <TopBar
         searchQuery={searchQuery}
-        onSearchChange={setSearchQuery}
-        activeTab={activeTab}
-        onTabChange={setActiveTab}
+        onSearchChange={handleSearchChange}
+        categories={categories}
+        activeCategory={activeCategory}
+        onCategoryChange={handleCategoryChange}
+        onAboutOpen={() => setAboutOpen(true)}
       />
 
-      <main className="flex-1 max-w-4xl mx-auto w-full px-4 py-6">
-        {renderContent()}
+      <main
+        className="flex-1 max-w-6xl mx-auto w-full px-4 py-6"
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
+      >
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
+            {isSearching
+              ? `${filteredApps.length} result${filteredApps.length !== 1 ? "s" : ""} for "${searchQuery}"`
+              : activeCategory === "All"
+              ? `${filteredApps.length} Apps`
+              : `${activeCategory} · ${filteredApps.length} apps`}
+          </h2>
+          {totalPages > 1 && (
+            <span className="text-xs text-muted-foreground font-mono">
+              {safePage}/{totalPages}
+            </span>
+          )}
+        </div>
+
+        {paginatedApps.length > 0 ? (
+          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-3">
+            {paginatedApps.map((app) => (
+              <AppCard
+                key={app.id}
+                app={app}
+                onClick={() => setSelectedApp(app)}
+              />
+            ))}
+          </div>
+        ) : (
+          <p className="text-sm text-muted-foreground py-12 text-center">
+            No apps found. Try a different search or category.
+          </p>
+        )}
       </main>
 
-      <Footer />
+      <Footer
+        currentPage={safePage}
+        totalPages={totalPages}
+        onPageChange={setCurrentPage}
+      />
+
+      <AboutDialog open={aboutOpen} onClose={() => setAboutOpen(false)} />
 
       {selectedApp && (
         <AppDetailPanel
