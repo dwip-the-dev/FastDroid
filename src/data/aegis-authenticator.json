@@ -2,7 +2,7 @@
   "id": "aegis-authenticator",
   "name": "Aegis Authenticator",
   "category": "Security",
-  "icon": "/icons/aegis-authenticator.png",
+  "icon": "https://play-lh.googleusercontent.com/qDzsOmoRT9o6QTElCaRJElAtfYW-nnOadwIInb6bXSEKexB211SsEtSeZrF5xm_lKUY",
   "description": "A secure 2FA authenticator app with encrypted backups and strong privacy features.",
   "source": "https://github.com/beemdevelopment/Aegis",
   "downloadUrl": "https://github.com/beemdevelopment/Aegis/releases/download/v3.4.1/aegis-v3.4.1.apk",
