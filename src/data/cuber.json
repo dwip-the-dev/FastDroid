@@ -2,7 +2,7 @@
   "id": "cuber",
   "name": "Cuber",
   "category": "Games",
-  "icon": "/icons/cuber.png",
+  "icon": "https://raw.githubusercontent.com/tiagohm/cuber/master/cube.svg",
   "description": "A 3D Rubik’s Cube puzzle game with smooth controls and realistic cube rotations. Practice solves, experiment freely, and challenge your spatial thinking.",
   "source": "https://github.com/dwip-the-dev/my-apps",
   "downloadUrl": "https://github.com/dwip-the-dev/my-apps/releases/download/V1/Cuber.apk",
