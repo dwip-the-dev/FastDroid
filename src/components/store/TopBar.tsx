@@ -1,27 +1,31 @@
-import { Search, X, Info } from "lucide-react";
+import { Search, X, Info, LayoutGrid, Sun, Moon } from "lucide-react";
 import { useState } from "react";
+import { useTheme } from "@/components/ThemeProvider";
 
 interface TopBarProps {
   searchQuery: string;
   onSearchChange: (query: string) => void;
-  categories: string[];
-  activeCategory: string;
-  onCategoryChange: (cat: string) => void;
+  activeCategory: string | null;
+  onClearCategory: () => void;
   onAboutOpen: () => void;
+  onCategoriesOpen: () => void;
 }
 
 const TopBar = ({
   searchQuery,
   onSearchChange,
-  categories,
   activeCategory,
-  onCategoryChange,
+  onClearCategory,
   onAboutOpen,
+  onCategoriesOpen,
 }: TopBarProps) => {
   const [searchOpen, setSearchOpen] = useState(false);
+  const { resolvedTheme, setTheme } = useTheme();
+
+  const toggleTheme = () => setTheme(resolvedTheme === "dark" ? "light" : "dark");
 
   return (
-    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-4 h-14 flex items-center gap-3">
         {!searchOpen && (
           <>
@@ -31,39 +35,48 @@ const TopBar = ({
                 alt="FastDroid"
                 className="w-7 h-7 rounded-md"
               />
-              <span className="font-semibold text-foreground tracking-tight hidden sm:inline">
+              <span className="font-semibold text-foreground tracking-tight">
                 FastDroid
               </span>
             </div>
 
-            {/* Category tabs - horizontally scrollable */}
-            <nav className="flex items-center gap-1 ml-2 overflow-x-auto scrollbar-hide flex-1 min-w-0">
-              {categories.map((cat) => (
-                <button
-                  key={cat}
-                  onClick={() => onCategoryChange(cat)}
-                  className={`px-3 py-1.5 rounded-md text-xs font-medium transition-colors whitespace-nowrap flex-shrink-0 ${
-                    activeCategory === cat
-                      ? "bg-accent text-foreground"
-                      : "text-muted-foreground hover:text-foreground hover:bg-accent/50"
-                  }`}
-                >
-                  {cat}
-                </button>
-              ))}
-            </nav>
+            {activeCategory && (
+              <button
+                onClick={onClearCategory}
+                className="ml-2 flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary/15 text-primary text-xs font-medium hover:bg-primary/25 transition-all duration-200"
+              >
+                {activeCategory}
+                <X size={12} />
+              </button>
+            )}
+
+            <div className="flex-1" />
 
             <div className="flex items-center gap-1 flex-shrink-0">
               <button
+                onClick={onCategoriesOpen}
+                className="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-accent transition-all duration-200 hover:scale-110"
+                aria-label="Categories"
+              >
+                <LayoutGrid size={18} />
+              </button>
+              <button
                 onClick={onAboutOpen}
-                className="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-accent transition-colors"
+                className="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-accent transition-all duration-200 hover:scale-110"
                 aria-label="About"
               >
                 <Info size={18} />
               </button>
               <button
+                onClick={toggleTheme}
+                className="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-accent transition-all duration-200 hover:scale-110"
+                aria-label="Toggle theme"
+              >
+                {resolvedTheme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
+              </button>
+              <button
                 onClick={() => setSearchOpen(true)}
-                className="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-accent transition-colors"
+                className="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-accent transition-all duration-200 hover:scale-110"
                 aria-label="Search"
               >
                 <Search size={18} />
@@ -73,7 +86,7 @@ const TopBar = ({
         )}
 
         {searchOpen && (
-          <div className="flex items-center gap-2 flex-1">
+          <div className="flex items-center gap-2 flex-1 animate-fade-in">
             <Search size={18} className="text-muted-foreground flex-shrink-0" />
             <input
               type="text"
@@ -88,7 +101,7 @@ const TopBar = ({
                 setSearchOpen(false);
                 onSearchChange("");
               }}
-              className="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-accent transition-colors"
+              className="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-accent transition-all duration-200"
               aria-label="Close search"
             >
               <X size={18} />
