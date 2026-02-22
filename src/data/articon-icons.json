@@ -2,7 +2,7 @@
   "id": "articon-icons",
   "name": "Articon Icons",
   "category": "Personalization",
-  "icon": "/icons/articon-icons.png",
+  "icon": "https://arcticons.com/img/arcticons/icon.png",
   "description": "A comprehensive collection of customizable app icons for Android. Design and apply icon packs with ease to personalize your home screen.",
   "source": "https://github.com/Arcticons-Team/Arcticons",
   "downloadUrl": "https://github.com/Arcticons-Team/Arcticons/releases/download/14.3.3/Arcticons-14.3.3-normal-release.apk",
