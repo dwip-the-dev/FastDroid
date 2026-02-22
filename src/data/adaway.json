@@ -2,7 +2,7 @@
   "id": "adaway",
   "name": "AdAway",
   "category": "Security",
-  "icon": "/icons/adaway.png",
+  "icon": "https://github.com/AdAway/AdAway/blob/master/app/src/main/res/mipmap-mdpi/icon.png",
   "description": "An open-source ad blocker for Android that uses hosts file modification to block ads system-wide.",
   "source": "https://github.com/AdAway/AdAway",
   "downloadUrl": "https://github.com/AdAway/AdAway/releases/download/v6.1.4/AdAway-6.1.4-20241027.apk",
