@@ -1,42 +1,32 @@
 import { useState } from "react";
-
-interface App {
-  id: string;
-  name: string;
-  version: string;
-  category: string;
-  size: string;
-  icon: string;
-}
+import type { AppData } from "@/types/app";
 
 interface AppCardProps {
-  app: App;
+  app: AppData;
   onClick: () => void;
 }
 
+const fallbackGradients = [
+  "from-emerald-600 to-teal-700",
+  "from-blue-600 to-indigo-700",
+  "from-orange-500 to-red-600",
+  "from-violet-600 to-purple-700",
+  "from-cyan-500 to-blue-600",
+  "from-rose-500 to-pink-600",
+  "from-amber-500 to-orange-600",
+  "from-lime-500 to-green-600",
+];
+
 const AppCard = ({ app, onClick }: AppCardProps) => {
   const [imgError, setImgError] = useState(false);
-
-  const fallbackGradients = [
-    "from-emerald-600 to-teal-700",
-    "from-blue-600 to-indigo-700",
-    "from-orange-500 to-red-600",
-    "from-violet-600 to-purple-700",
-    "from-cyan-500 to-blue-600",
-    "from-rose-500 to-pink-600",
-    "from-amber-500 to-orange-600",
-    "from-lime-500 to-green-600",
-  ];
-
   const gradientIndex = app.name.charCodeAt(0) % fallbackGradients.length;
 
   return (
     <button
       onClick={onClick}
-      className="w-full flex items-center gap-3 p-3 rounded-lg bg-card hover:bg-accent transition-colors text-left group"
+      className="w-full flex flex-col items-center gap-2 p-4 rounded-xl bg-card hover:bg-accent/60 border border-border/50 hover:border-border transition-all text-center group"
     >
-      {/* Icon */}
-      <div className="w-12 h-12 rounded-xl overflow-hidden flex-shrink-0 bg-muted">
+      <div className="w-14 h-14 rounded-2xl overflow-hidden flex-shrink-0 bg-muted">
         {!imgError ? (
           <img
             src={app.icon}
@@ -55,24 +45,13 @@ const AppCard = ({ app, onClick }: AppCardProps) => {
         )}
       </div>
 
-      {/* Info */}
-      <div className="flex-1 min-w-0">
+      <div className="min-w-0 w-full">
         <h3 className="text-sm font-medium text-foreground truncate">
           {app.name}
         </h3>
-        <p className="text-xs text-muted-foreground mt-0.5">
+        <p className="text-xs text-muted-foreground mt-0.5 truncate">
           {app.category}
         </p>
-      </div>
-
-      {/* Version + View */}
-      <div className="flex flex-col items-end gap-1 flex-shrink-0">
-        <span className="text-xs font-mono text-muted-foreground">
-          {app.version}
-        </span>
-        <span className="text-xs text-primary font-medium opacity-0 group-hover:opacity-100 transition-opacity">
-          View →
-        </span>
       </div>
     </button>
   );
