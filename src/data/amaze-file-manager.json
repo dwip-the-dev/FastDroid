@@ -2,7 +2,7 @@
   "id": "amaze-file-manager",
   "name": "Amaze File Manager",
   "category": "Utilities",
-  "icon": "/icons/amaze-file-manager.png",
+  "icon": "https://play-lh.googleusercontent.com/Gu6CWMrnD_ohDjsDDf8EFxL7yOMygEqzqHT8P_D4GWyRmiasu7f2fal1X5LufYsrzw",
   "description": "A lightweight open-source file manager with features like root explorer, SMB support, and fast navigation.",
   "source": "https://github.com/TeamAmaze/AmazeFileManager",
   "downloadUrl": "https://github.com/TeamAmaze/AmazeFileManager/releases/download/v3.11.2/app-fdroid-release.apk",
