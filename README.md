@@ -5,8 +5,7 @@
   <img src="https://img.shields.io/github/license/dwip-the-dev/FastDroid" alt="MIT License"/>
   <img src="https://img.shields.io/badge/apps-50%2B-brightgreen" alt="50+ Apps"/>
   <img src="https://img.shields.io/badge/PRs-welcome-orange" alt="PRs Welcome"/>
-  <img src="https://img.shields.io/badge/tracking-none-red" alt="No Tracking"/>
-</p>
+  </p>
 
 <p align="center">
   <strong>FastDroid</strong> is a curated directory of open-source Android apps with direct download links to official releases.
@@ -79,6 +78,7 @@ We accept submissions via GitHub Pull Requests only.
 * No cracked/pirated apps
 * No closed-source binaries
 * No shady telemetry or malware
+* No duplicate apps. [Check The List](https://docs.google.com/spreadsheets/d/1D6kS9HyMgUGG11PM1dXk3cLHjM1iGndQgfMlUKKmrF8/edit?usp=drivesdk)
 
 ### 📝 Submission Steps
 
