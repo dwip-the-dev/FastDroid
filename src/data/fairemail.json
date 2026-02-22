@@ -1,0 +1,20 @@
+{
+  "id": "fairemail",
+  "name": "FairEmail",
+  "category": "Communication",
+  "icon": "/icons/fairemail.png",
+  "description": "A privacy-focused open-source email app that supports multiple accounts, unified inbox, and a strong preference for minimal permissions and no trackers.",
+  "source": "https://github.com/M66B/FairEmail",
+  "downloadUrl": "https://github.com/M66B/FairEmail/releases/download/1.2312/FairEmail-v1.2312a-github-release.apk",
+  "releaseTag": "1.2312",
+  "sha256": null,
+  "lastUpdated": "2026-02-21",
+  "featured": false,
+  "tags": [
+    "email",
+    "communication",
+    "privacy",
+    "open-source",
+    "utilities"
+  ]
+}

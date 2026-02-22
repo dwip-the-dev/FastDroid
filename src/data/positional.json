@@ -1,0 +1,14 @@
+{
+  "id": "positional",
+  "name": "Positional",
+  "category": "Tools",
+  "icon": "/icons/positional.png",
+  "description": "A utility app focused on positional tracking, coordinates, and GPS-based tools for navigation and utility use.",
+  "source": "https://github.com/Hamza417/Positional",
+  "downloadUrl": "https://github.com/Hamza417/Positional/releases/download/v181.0.30/app-full-release.apk",
+  "releaseTag": "v181.0.30",
+  "sha256": null,
+  "lastUpdated": "2026-02-21",
+  "featured": false,
+  "tags": ["tools", "gps", "navigation", "coordinates", "utility"]
+}

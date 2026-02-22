@@ -1,0 +1,20 @@
+{
+  "id": "fdroid",
+  "name": "F-Droid",
+  "category": "Utilities",
+  "icon": "/icons/fdroid.png",
+  "description": "The official F-Droid client for discovering, installing, and updating free and open-source Android apps. Provides access to the F-Droid repository with reproducible builds and transparent metadata.",
+  "source": "https://gitlab.com/fdroid/fdroidclient",
+  "downloadUrl": "https://gitlab.com/fdroid/fdroidclient/-/package_files/204739018/download",
+  "releaseTag": "stable",
+  "sha256": null,
+  "lastUpdated": "2026-02-21",
+  "featured": false,
+  "tags": [
+    "fdroid",
+    "app-store",
+    "open-source",
+    "reproducible-builds",
+    "utilities"
+  ]
+}

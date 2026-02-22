@@ -1,0 +1,19 @@
+{
+  "id": "neostore",
+  "name": "Neo Store",
+  "category": "Utilities",
+  "icon": "/icons/neostore.png",
+  "description": "Neo Store is a modern, lightweight Android app marketplace alternative that lets you browse and install Android apps without using the Play Store. Designed with simplicity and user experience in mind.",
+  "source": "https://github.com/NeoApplications/Neo-Store",
+  "downloadUrl": "https://github.com/NeoApplications/Neo-Store/releases/download/1.2.4/Neo_Store_1.2.4_release.apk",
+  "releaseTag": "1.2.4",
+  "sha256": null,
+  "lastUpdated": "2026-02-21",
+  "featured": false,
+  "tags": [
+    "app-store",
+    "alternative",
+    "utilities",
+    "open-source"
+  ]
+}

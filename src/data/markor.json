@@ -1,0 +1,14 @@
+{
+  "id": "markor",
+  "name": "Markor",
+  "category": "Productivity",
+  "icon": "/icons/markor.png",
+  "description": "A powerful markdown editor and note organiser with file system integration, designed for flexible text editing and task management.",
+  "source": "https://github.com/gsantner/markor",
+  "downloadUrl": "https://github.com/gsantner/markor/releases/download/v2.15.2/net.gsantner.markor-v161-2.15.2-flavorDefault-release.apk",
+  "releaseTag": "v2.15.2",
+  "sha256": null,
+  "lastUpdated": "2026-02-21",
+  "featured": false,
+  "tags": ["markdown", "notes", "editor", "productivity", "open-source"]
+}

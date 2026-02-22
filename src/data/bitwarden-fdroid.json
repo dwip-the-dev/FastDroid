@@ -1,0 +1,14 @@
+{
+  "id": "bitwarden-fdroid",
+  "name": "Bitwarden",
+  "category": "Security",
+  "icon": "/icons/bitwarden-fdroid.png",
+  "description": "The open-source Bitwarden password manager client, providing secure vault storage, autofill, and cross-device sync.",
+  "source": "https://github.com/bitwarden/mobile",
+  "downloadUrl": "https://github.com/bitwarden/mobile/releases/download/v2024.10.0/com.x8bit.bitwarden-fdroid.apk",
+  "releaseTag": "v2024.10.0",
+  "sha256": null,
+  "lastUpdated": "2026-02-21",
+  "featured": false,
+  "tags": ["security", "passwords", "manager", "open-source", "utilities"]
+}

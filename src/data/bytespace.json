@@ -1,0 +1,14 @@
+{
+  "id": "bytespace",
+  "name": "ByteSpace",
+  "category": "Entertainment",
+  "icon": "/icons/bytespace.png",
+  "description": "A simple blogging app",
+  "source": "https://github.com/dwip-the-dev/my-apps",
+  "downloadUrl": "https://github.com/dwip-the-dev/my-apps/releases/latest/download/ByteSpace.apk",
+  "releaseTag": "latest",
+  "sha256": null,
+  "lastUpdated": "2026-02-21",
+  "featured": true,
+  "tags": ["blogs", "entertainment", "online"]
+}

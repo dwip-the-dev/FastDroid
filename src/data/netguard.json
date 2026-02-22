@@ -1,0 +1,14 @@
+{
+  "id": "netguard",
+  "name": "NetGuard",
+  "category": "Security",
+  "icon": "/icons/netguard.png",
+  "description": "A no-root firewall providing simple and secure per-app network control using Android’s VPN API.",
+  "source": "https://github.com/M66B/NetGuard",
+  "downloadUrl": "https://github.com/M66B/NetGuard/releases/download/2.334/NetGuard-v2.334-release.apk",
+  "releaseTag": "2.334",
+  "sha256": null,
+  "lastUpdated": "2026-02-21",
+  "featured": false,
+  "tags": ["firewall", "security", "network", "no-root", "open-source"]
+}

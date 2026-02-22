@@ -1,0 +1,14 @@
+{
+  "id": "organic-maps",
+  "name": "Organic Maps",
+  "category": "Navigation",
+  "icon": "/icons/organic-maps.png",
+  "description": "A fast, offline maps and navigation app focused on privacy, using OpenStreetMap data with no trackers or ads.",
+  "source": "https://github.com/organicmaps/organicmaps",
+  "downloadUrl": "https://github.com/organicmaps/organicmaps/releases/download/2026.02.18-5-android/OrganicMaps-26021805-web-release.apk",
+  "releaseTag": "2026.02.18-5-android",
+  "sha256": null,
+  "lastUpdated": "2026-02-21",
+  "featured": false,
+  "tags": ["maps", "navigation", "offline", "open-source", "privacy"]
+}

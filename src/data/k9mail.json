@@ -1,0 +1,19 @@
+{
+  "id": "k9mail",
+  "name": "K-9 Mail",
+  "category": "Communication",
+  "icon": "/icons/k9mail.png",
+  "description": "An open-source Android email client with powerful features like IMAP/POP3/Exchange support, thread views, and customizable settings built on the Thunderbird Android project.",
+  "source": "https://github.com/thunderbird/thunderbird-android",
+  "downloadUrl": "https://github.com/thunderbird/thunderbird-android/releases/download/K9MAIL_16_1/k9mail-16.1.apk",
+  "releaseTag": "16.1",
+  "sha256": null,
+  "lastUpdated": "2026-02-21",
+  "featured": false,
+  "tags": [
+    "email",
+    "communication",
+    "open-source",
+    "utilities"
+  ]
+}

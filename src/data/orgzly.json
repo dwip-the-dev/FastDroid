@@ -1,0 +1,14 @@
+{
+  "id": "orgzly",
+  "name": "Orgzly",
+  "category": "Productivity",
+  "icon": "/icons/orgzly.png",
+  "description": "A notes and GTD organizer based on Org-mode, perfect for structured outlines, tasks, and long-form writing.",
+  "source": "https://github.com/orgzly/orgzly-android",
+  "downloadUrl": "https://github.com/orgzly/orgzly-android/releases/download/v1.8.11/orgzly-1.8.11.apk",
+  "releaseTag": "v1.8.11",
+  "sha256": null,
+  "lastUpdated": "2026-02-21",
+  "featured": false,
+  "tags": ["notes", "org-mode", "tasks", "productivity", "open-source"]
+}

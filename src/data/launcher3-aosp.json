@@ -1,0 +1,14 @@
+{
+  "id": "launcher3-aosp",
+  "name": "Launcher3 AOSP",
+  "category": "Personalization",
+  "icon": "/icons/launcher3-aosp.png",
+  "description": "AOSP Launcher3 experience adapted for general Android devices, focusing on performance, stability, and clean design.",
+  "source": "https://github.com/amirzaidi/Launcher3",
+  "downloadUrl": "https://github.com/amirzaidi/Launcher3/releases/download/Pixel-v3.9.1/Launcher3-aosp-release.apk",
+  "releaseTag": "Pixel-v3.9.1",
+  "sha256": null,
+  "lastUpdated": "2026-02-21",
+  "featured": false,
+  "tags": ["launcher", "aosp", "personalization", "open-source"]
+}
