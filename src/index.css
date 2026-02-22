@@ -3,7 +3,56 @@
 @tailwind utilities;
 
 @layer base {
+  /* ===== LIGHT MODE ===== */
   :root {
+    --background: 0 0% 98%;
+    --foreground: 220 14% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 14% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 14% 10%;
+
+    --primary: 142 60% 38%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 10% 93%;
+    --secondary-foreground: 220 14% 20%;
+
+    --muted: 220 10% 94%;
+    --muted-foreground: 215 12% 45%;
+
+    --accent: 220 10% 92%;
+    --accent-foreground: 220 14% 10%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 10% 88%;
+    --input: 220 10% 88%;
+    --ring: 142 60% 38%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 220 14% 10%;
+    --sidebar-primary: 142 60% 38%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 10% 92%;
+    --sidebar-accent-foreground: 220 14% 10%;
+    --sidebar-border: 220 10% 88%;
+    --sidebar-ring: 142 60% 38%;
+
+    --surface: 0 0% 96%;
+    --surface-hover: 0 0% 92%;
+    --trust: 142 60% 38%;
+    --trust-foreground: 0 0% 100%;
+    --dim: 220 14% 10% / 0.4;
+  }
+
+  /* ===== DARK MODE ===== */
+  .dark {
     --background: 220 14% 8%;
     --foreground: 210 20% 92%;
 
@@ -43,7 +92,6 @@
     --sidebar-border: 220 10% 18%;
     --sidebar-ring: 142 60% 45%;
 
-    /* Custom tokens */
     --surface: 220 12% 10%;
     --surface-hover: 220 12% 14%;
     --trust: 142 60% 45%;
@@ -58,7 +106,7 @@
   }
 
   body {
-    @apply bg-background text-foreground antialiased;
+    @apply bg-background text-foreground antialiased transition-colors duration-300;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
   }
 
@@ -101,11 +149,40 @@
   display: none;
 }
 
-/* Slide in animation */
-@keyframes slide-in {
-  from { transform: translateX(100%); }
-  to { transform: translateX(0); }
+/* Page transition */
+.page-transition-enter {
+  animation: page-in 0.3s ease-out;
 }
-.animate-slide-in {
-  animation: slide-in 0.2s ease-out;
+
+@keyframes page-in {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes page-out-left {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+}
+
+@keyframes page-out-right {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(20px);
+  }
 }
