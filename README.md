@@ -156,10 +156,6 @@ Predictable. Auditable. Secure.
 ## 📊 Project Stats
 
 <p align="center">
-  <img src="https://img.shields.io/github/stars/dwip-the-dev/FastDroid?style=social" alt="GitHub stars" />
-  <img src="https://img.shields.io/github/forks/dwip-the-dev/FastDroid?style=social" alt="GitHub forks" />
-  <img src="https://img.shields.io/github/watchers/dwip-the-dev/FastDroid?style=social" alt="GitHub watchers" />
-  <br/>
   <img src="https://img.shields.io/github/last-commit/dwip-the-dev/FastDroid" alt="Last commit" />
   <img src="https://img.shields.io/github/issues-raw/dwip-the-dev/FastDroid" alt="Open issues" />
   <img src="https://img.shields.io/github/issues-pr-raw/dwip-the-dev/FastDroid" alt="Open PRs" />
