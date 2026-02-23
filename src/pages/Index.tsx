@@ -7,7 +7,7 @@ import AboutDialog from "@/components/store/AboutDialog";
 import CategoryGrid from "@/components/store/CategoryGrid";
 import { shuffledApps, categoryList, appsByCategory, getAppSlug } from "@/data/apps";
 
-const APPS_PER_PAGE = 15;
+const APPS_PER_PAGE = 20;
 
 type View = "home" | "categories";
 
