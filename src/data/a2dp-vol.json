@@ -1,0 +1,16 @@
+{
+  "id": "a2dp.Vol",
+  "name": "A2DP Volume",
+  "category": "Multimedia",
+  "icon": "https://raw.githubusercontent.com/jroal/a2dpvolume/refs/heads/master/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+  "description": "Manage Bluetooth functions",
+  "source": "https://github.com/jroal/a2dpvolume",
+  "downloadUrl": "https://github.com/jroal/a2dpvolume/releases/download/2.13.0.4/A2DPVolume2.13.0.4.apk",
+  "releaseTag": "2.13.0.4",
+  "sha256": null,
+  "lastUpdated": "2020-03-03",
+  "featured": false,
+  "tags": [
+    "Multimedia"
+  ]
+}

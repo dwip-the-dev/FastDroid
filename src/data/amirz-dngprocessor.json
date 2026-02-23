@@ -1,0 +1,16 @@
+{
+  "id": "amirz.dngprocessor",
+  "name": "DNG Processor",
+  "category": "Multimedia",
+  "icon": "https://raw.githubusercontent.com/amirzaidi/DNGProcessor/refs/heads/dev/app/src/main/ic_launcher-web.png",
+  "description": "Process DNG images into JPEGs",
+  "source": "https://github.com/amirzaidi/DNGProcessor",
+  "downloadUrl": "https://github.com/amirzaidi/DNGProcessor/releases/download/v5/DNGProcessor-release.apk",
+  "releaseTag": "5",
+  "sha256": null,
+  "lastUpdated": "2019-11-16",
+  "featured": false,
+  "tags": [
+    "Multimedia"
+  ]
+}

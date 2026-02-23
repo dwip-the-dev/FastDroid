@@ -1,0 +1,18 @@
+{
+  "id": "app.alextran.immich",
+  "name": "Immich",
+  "category": "Cloud Storage & File Sync",
+  "icon": "https://raw.githubusercontent.com/immich-app/immich/refs/heads/main/design/immich-logo-stacked-light.svg",
+  "description": "This is a client app for the self-hostable Immich Server (which can be found with the app's source repo). You will need to run/manage the server on your own in order to use the app. Once set up, this app can be used as photo and video backup solution directly from your mobile phone. <b>Features:</b> * Upload and view assets(videos/images). * Multi-user supported. * Quick navigation with drag scroll bar. * Auto Backup. * Support HEIC/HEIF Backup. * Extract and display EXIF info. * Real-time render from multi-device upload event. * Image Tagging/Classification based on ImageNet dataset * Object detection...",
+  "source": "https://github.com/immich-app/immich",
+  "downloadUrl": "https://github.com/immich-app/immich/releases/download/v2.5.6/app-arm64-v8a-release.apk",
+  "releaseTag": "2.5.6",
+  "sha256": null,
+  "lastUpdated": "2026-02-11",
+  "featured": false,
+  "tags": [
+    "Cloud Storage & File Sync",
+    "Multimedia",
+    "System"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "agrigolo.opendrummer",
+  "name": "OpenDrummer - Drum Loops",
+  "category": "Multimedia",
+  "icon": "https://codeberg.org/agrigolo/OpenDrummer/raw/branch/master/app/src/main/ic_launcher-playstore.png",
+  "description": "Collection of drum loops in various styles and tempos, designed to enhance your practice by providing solid, high-quality grooves.\nAll loops are audio files converted from MIDI using premium soundfonts.\nThe tempo can be adjusted by up to 10% in either direction; however,this alters the pitch, so use this feature with caution.",
+  "source": "https://codeberg.org/agrigolo/OpenDrummer",
+  "downloadUrl": "https://codeberg.org/agrigolo/OpenDrummer/releases/download/v1.1/app-release.apk",
+  "releaseTag": "v1.1",
+  "sha256": null,
+  "lastUpdated": "2025-03-17",
+  "featured": false,
+  "tags": [
+    "Multimedia",
+    "Music Practice Tool"
+  ]
+}

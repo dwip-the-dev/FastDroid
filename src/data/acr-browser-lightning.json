@@ -1,0 +1,17 @@
+{
+  "id": "acr.browser.lightning",
+  "name": "Lightning",
+  "category": "Browser",
+  "icon": "https://github.com/anthonycr/Lightning-Browser/blob/main/launcher_icon_small.png",
+  "description": "Lightweight web browser",
+  "source": "https://github.com/anthonycr/Lightning-Browser",
+  "downloadUrl": "https://github.com/anthonycr/Lightning-Browser/releases/download/v4.3.3/lightningPlus-release.apk",
+  "releaseTag": "5.1.0",
+  "sha256": null,
+  "lastUpdated": "2019-11-02",
+  "featured": false,
+  "tags": [
+    "Browser",
+    "Internet"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "ademar.textlauncher",
+  "name": "Text Launcher",
+  "category": "Launcher",
+  "icon": "https://gitlab.com/ademar111190/textlauncher/-/raw/14715fcfdc3be08e41e98a7d8661a2a1e93430c7/assets/icon.png",
+  "description": "An Android Launcher that only shows the app name in a simple list. It is the lightest and fastest possible Launcher to Android because it does not loads any image, data or any other thing but the app name.",
+  "source": "https://gitlab.com/ademar111190/textlauncher",
+  "downloadUrl": "https://github.com/ademar111190/TextLauncher/releases/download/1.4.1/app-release.apk",
+  "releaseTag": "1.4.1",
+  "sha256": null,
+  "lastUpdated": "2024-07-30",
+  "featured": false,
+  "tags": [
+    "Launcher",
+    "Theming"
+  ]
+}

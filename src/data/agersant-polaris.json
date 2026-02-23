@@ -1,0 +1,17 @@
+{
+  "id": "agersant.polaris",
+  "name": "Polaris",
+  "category": "Multimedia",
+  "icon": "https://github.com/agersant/polaris-android/raw/refs/heads/master/assets/images/logo.svg",
+  "description": "Connect to your Polaris server and listen to music on the go!",
+  "source": "https://github.com/agersant/polaris-android",
+  "downloadUrl": "https://github.com/agersant/polaris-android/releases/download/0.10.3/polaris.apk",
+  "releaseTag": "0.10.3",
+  "sha256": null,
+  "lastUpdated": "2026-01-05",
+  "featured": false,
+  "tags": [
+    "Multimedia",
+    "Online Media Player"
+  ]
+}

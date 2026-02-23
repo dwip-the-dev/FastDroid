@@ -1,0 +1,18 @@
+{
+  "id": "amirz.rootless.nexuslauncher",
+  "name": "Rootless Pixel Launcher",
+  "category": "Launcher",
+  "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSET8z8ZcsH3wRD2BGGnOAV_Q33ienVyFzLcBhAw2hmiQ&s=10",
+  "description": "Launcher3 with Pixel Launcher features",
+  "source": "https://github.com/amirzaidi/Launcher3",
+  "downloadUrl": "https://github.com/amirzaidi/Launcher3/releases/download/Pixel-v3.9.1/Launcher3-aosp-release.apk",
+  "releaseTag": "3.9.1",
+  "sha256": null,
+  "lastUpdated": "2019-09-11",
+  "featured": false,
+  "tags": [
+    "Launcher",
+    "System",
+    "Theming"
+  ]
+}

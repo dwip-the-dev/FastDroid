@@ -1,0 +1,19 @@
+{
+  "id": "alt.nainapps.aer",
+  "name": "Aer - Fork of Anemo",
+  "category": "File Encryption & Vault",
+  "icon": "https://f-droid.org/repo/alt.nainapps.aer/en-US/icon_QAL7nRZio6Fo9XtPRi0jGLdFxuY3mLdsqxbV_8cXURM=.png",
+  "description": "Aer is a private local (+secondary) storage utility application for android.",
+  "source": "https://github.com/nain-F49FF806/anemo-aer",
+  "downloadUrl": "https://github.com/nain-F49FF806/anemo-aer/releases/download/2024.12.25/aer-app-release.apk",
+  "releaseTag": "2024.12.25",
+  "sha256": null,
+  "lastUpdated": "2025-01-06",
+  "featured": false,
+  "tags": [
+    "File Encryption & Vault",
+    "Multimedia",
+    "Security",
+    "System"
+  ]
+}
