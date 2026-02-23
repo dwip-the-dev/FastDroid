@@ -1,7 +1,7 @@
 {
   "id": "librera-reader",
   "name": "Librera Reader",
-  "category": "Books",
+  "category": "Reading & Education",
   "icon": "https://play-lh.googleusercontent.com/Lw2RfArjFlT8SR8j15uTmP-SlbJvQRFMLPYcZa_eqpxBOCXg8zHmKLEEgAWPFm70WUE",
   "description": "A flexible document reader supporting many formats such as PDF, EPUB, MOBI, and more, with customizable reading options.",
   "source": "https://github.com/foobnix/LibreraReader",
@@ -10,5 +10,12 @@
   "sha256": null,
   "lastUpdated": "2026-02-21",
   "featured": false,
-  "tags": ["books", "reader", "documents", "utility", "open-source"]
+  "tags": [
+    "books",
+    "reader",
+    "documents",
+    "utility",
+    "open-source",
+    "Books"
+  ]
 }

@@ -10,5 +10,10 @@
   "sha256": null,
   "lastUpdated": "2026-02-21",
   "featured": false,
-  "tags": ["notes", "productivity", "open-source", "organizer"]
+  "tags": [
+    "notes",
+    "productivity",
+    "open-source",
+    "organizer"
+  ]
 }

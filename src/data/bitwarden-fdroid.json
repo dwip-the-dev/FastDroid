@@ -1,7 +1,7 @@
 {
   "id": "bitwarden-fdroid",
   "name": "Bitwarden",
-  "category": "Security",
+  "category": "Privacy & Security",
   "icon": "https://images.icon-icons.com/3053/PNG/512/bitwarden_macos_bigsur_icon_190340.png",
   "description": "The open-source Bitwarden password manager client, providing secure vault storage, autofill, and cross-device sync.",
   "source": "https://github.com/bitwarden/mobile",
@@ -10,5 +10,12 @@
   "sha256": null,
   "lastUpdated": "2026-02-21",
   "featured": false,
-  "tags": ["security", "passwords", "manager", "open-source", "utilities"]
+  "tags": [
+    "security",
+    "passwords",
+    "manager",
+    "open-source",
+    "utilities",
+    "Security"
+  ]
 }

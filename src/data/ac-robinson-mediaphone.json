@@ -1,7 +1,7 @@
 {
   "id": "ac.robinson.mediaphone",
   "name": "Com-Phone Story Maker",
-  "category": "Multimedia",
+  "category": "Media",
   "icon": "https://raw.githubusercontent.com/communitymedia/mediaphone/refs/heads/master/MediaPhone/src/main/res/mipmap-hdpi/ic_launcher.png",
   "description": "Com-Phone Story Maker helps you create multimedia narratives, combining photos, audio and text in exciting ways to tell digital stories.",
   "downloadUrl": "https://github.com/communitymedia/mediaphone/releases/download/v1.8.2/mediaphone-v1.8.2.apk",

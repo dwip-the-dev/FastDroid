@@ -1,7 +1,7 @@
 {
   "id": "ademar.bitac",
   "name": "BitAC - Bitcoin Address Checker",
-  "category": "Money",
+  "category": "Productivity",
   "icon": "https://gitlab.com/ademar111190/BitAC/-/raw/master/Assets/ic_launcher-web.png?ref_type=heads",
   "description": "Bitcoin Address Checker (BitAC) is an open-source application designed to be lightweight and fast. The idea is to provide to Android users an easy and quick way to check the balance of bitcoin addresses. This application does not prove and is not intended to provide any functionality of a bitcoin wallet, so you can not receive, send or save bitcoins with BitAC, you can only check how many bitcoins a wallet has.",
   "source": "https://gitlab.com/ademar111190/BitAC",

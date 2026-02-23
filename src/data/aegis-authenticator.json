@@ -1,7 +1,7 @@
 {
   "id": "aegis-authenticator",
   "name": "Aegis Authenticator",
-  "category": "Security",
+  "category": "Privacy & Security",
   "icon": "https://play-lh.googleusercontent.com/qDzsOmoRT9o6QTElCaRJElAtfYW-nnOadwIInb6bXSEKexB211SsEtSeZrF5xm_lKUY",
   "description": "A secure 2FA authenticator app with encrypted backups and strong privacy features.",
   "source": "https://github.com/beemdevelopment/Aegis",
@@ -10,5 +10,11 @@
   "sha256": null,
   "lastUpdated": "2026-02-21",
   "featured": false,
-  "tags": ["2fa", "security", "authenticator", "open-source"]
+  "tags": [
+    "2fa",
+    "security",
+    "authenticator",
+    "open-source",
+    "Security"
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "id": "adaway",
   "name": "AdAway",
-  "category": "Security",
+  "category": "Privacy & Security",
   "icon": "https://upload.wikimedia.org/wikipedia/en/8/8c/AdAway_Logo.png",
   "description": "An open-source ad blocker for Android that uses hosts file modification to block ads system-wide.",
   "source": "https://github.com/AdAway/AdAway",
@@ -10,5 +10,11 @@
   "sha256": null,
   "lastUpdated": "2026-02-21",
   "featured": false,
-  "tags": ["ad-blocker", "security", "privacy", "open-source"]
+  "tags": [
+    "ad-blocker",
+    "security",
+    "privacy",
+    "open-source",
+    "Security"
+  ]
 }

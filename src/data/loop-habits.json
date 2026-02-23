@@ -1,7 +1,7 @@
 {
   "id": "loop-habits",
   "name": "Loop Habits",
-  "category": "Health",
+  "category": "Health & Fitness",
   "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCTAfzRlQAlStaacYYMdTZeLmJhxU53jIBKVlB7YJx8g&s=10",
   "description": "A simple, open-source habit tracker to help you build and maintain good habits with charts and reminders.",
   "source": "https://github.com/iSoron/uhabits",
@@ -10,5 +10,11 @@
   "sha256": null,
   "lastUpdated": "2026-02-21",
   "featured": false,
-  "tags": ["habit-tracker", "health", "productivity", "open-source"]
+  "tags": [
+    "habit-tracker",
+    "health",
+    "productivity",
+    "open-source",
+    "Health"
+  ]
 }

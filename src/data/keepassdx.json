@@ -1,7 +1,7 @@
 {
   "id": "keepassdx",
   "name": "KeePassDX",
-  "category": "Security",
+  "category": "Privacy & Security",
   "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbViXzwfndOybps2vgA-IdimSaaVI2fm6FMR1HyEKhVg&s=10",
   "description": "An open-source KeePass database manager for Android. Manage your secure passwords offline with support for multiple database formats.",
   "source": "https://github.com/Kunzisoft/KeePassDX",
@@ -10,5 +10,11 @@
   "sha256": null,
   "lastUpdated": "2026-02-21",
   "featured": false,
-  "tags": ["security", "passwords", "open-source", "utilities"]
+  "tags": [
+    "security",
+    "passwords",
+    "open-source",
+    "utilities",
+    "Security"
+  ]
 }

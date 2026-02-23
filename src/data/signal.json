@@ -1,7 +1,7 @@
 {
   "id": "signal",
   "name": "Signal",
-  "category": "Communication",
+  "category": "Social",
   "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Signal-Logo-Ultramarine_%282024%29.svg/1280px-Signal-Logo-Ultramarine_%282024%29.svg.png",
   "description": "A secure, privacy-focused messaging and calling app with end-to-end encryption.",
   "source": "https://github.com/signalapp/Signal-Android",
@@ -15,6 +15,7 @@
     "communication",
     "privacy",
     "security",
-    "open-source"
+    "open-source",
+    "Communication"
   ]
 }

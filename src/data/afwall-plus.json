@@ -1,7 +1,7 @@
 {
   "id": "afwall-plus",
   "name": "AFWall+",
-  "category": "Security",
+  "category": "Privacy & Security",
   "icon": "https://play-lh.googleusercontent.com/JUwxKlna4zytjugpV4Gnl06Cqa4yNrBC9wln6s4MPlrun5uJT6awnj9M_AN9Q0pL264=w600-h300-pc0xffffff-pd",
   "description": "A firewall manager that lets you control network access on a per-app basis. Requires root for full features.",
   "source": "https://github.com/ukanth/afwall",
@@ -10,5 +10,11 @@
   "sha256": null,
   "lastUpdated": "2026-02-21",
   "featured": false,
-  "tags": ["firewall", "security", "network", "open-source"]
+  "tags": [
+    "firewall",
+    "security",
+    "network",
+    "open-source",
+    "Security"
+  ]
 }

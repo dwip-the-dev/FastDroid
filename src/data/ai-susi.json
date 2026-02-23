@@ -1,7 +1,7 @@
 {
   "id": "ai.susi",
   "name": "SUSI.AI",
-  "category": "AI Chat",
+  "category": "AI",
   "icon": "https://github.com/fossasia/susi_android/blob/development/app/src/main/ic_launcher-web.png?raw=true",
   "description": "Susi AI is an intelligent personal assistant",
   "source": "https://github.com/fossasia/susi_android",

@@ -1,7 +1,7 @@
 {
   "id": "k9mail",
   "name": "K-9 Mail",
-  "category": "Communication",
+  "category": "Social",
   "icon": "https://play-lh.googleusercontent.com/14NO0m0A4HsPPx_5NE1t00HZA3M2rV0gRAM7609uDeazxcVD7IvzUphL5FV3yf5WLU8",
   "description": "An open-source Android email client with powerful features like IMAP/POP3/Exchange support, thread views, and customizable settings built on the Thunderbird Android project.",
   "source": "https://github.com/thunderbird/thunderbird-android",
@@ -14,6 +14,7 @@
     "email",
     "communication",
     "open-source",
-    "utilities"
+    "utilities",
+    "Communication"
   ]
 }

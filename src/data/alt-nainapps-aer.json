@@ -1,7 +1,7 @@
 {
   "id": "alt.nainapps.aer",
   "name": "Aer - Fork of Anemo",
-  "category": "File Encryption & Vault",
+  "category": "Privacy & Security",
   "icon": "https://f-droid.org/repo/alt.nainapps.aer/en-US/icon_QAL7nRZio6Fo9XtPRi0jGLdFxuY3mLdsqxbV_8cXURM=.png",
   "description": "Aer is a private local (+secondary) storage utility application for android.",
   "source": "https://github.com/nain-F49FF806/anemo-aer",

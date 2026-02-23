@@ -10,5 +10,9 @@
   "sha256": null,
   "lastUpdated": "2026-02-21",
   "featured": false,
-  "tags": ["utilities", "open-source", "useful"]
+  "tags": [
+    "utilities",
+    "open-source",
+    "useful"
+  ]
 }

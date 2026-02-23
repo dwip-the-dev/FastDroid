@@ -1,7 +1,7 @@
 {
   "id": "kiwi-browser",
   "name": "Kiwi Browser",
-  "category": "Internet",
+  "category": "Browser",
   "icon": "https://avatars.githubusercontent.com/u/40272275?v=4",
   "description": "A Chromium-based open-source browser with built-in ad blocking, extension support, and privacy features. Designed for fast browsing without trackers and bloat.",
   "source": "https://github.com/kiwibrowser/src",
@@ -15,6 +15,7 @@
     "internet",
     "open-source",
     "privacy",
-    "ad-blocking"
+    "ad-blocking",
+    "Internet"
   ]
 }

@@ -10,5 +10,11 @@
   "sha256": null,
   "lastUpdated": "2026-02-21",
   "featured": false,
-  "tags": ["utilities", "system", "network", "advanced", "open-source"]
+  "tags": [
+    "utilities",
+    "system",
+    "network",
+    "advanced",
+    "open-source"
+  ]
 }

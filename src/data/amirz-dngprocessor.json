@@ -1,7 +1,7 @@
 {
   "id": "amirz.dngprocessor",
   "name": "DNG Processor",
-  "category": "Multimedia",
+  "category": "Media",
   "icon": "https://raw.githubusercontent.com/amirzaidi/DNGProcessor/refs/heads/dev/app/src/main/ic_launcher-web.png",
   "description": "Process DNG images into JPEGs",
   "source": "https://github.com/amirzaidi/DNGProcessor",

@@ -1,7 +1,7 @@
 {
   "id": "launcher3-aosp",
   "name": "Launcher3 AOSP",
-  "category": "Personalization",
+  "category": "Utilities",
   "icon": "https://downloadr2.apkmirror.com/wp-content/uploads/2020/03/Quickstep_round.png",
   "description": "AOSP Launcher3 experience adapted for general Android devices, focusing on performance, stability, and clean design.",
   "source": "https://github.com/amirzaidi/Launcher3",
@@ -10,5 +10,11 @@
   "sha256": null,
   "lastUpdated": "2026-02-21",
   "featured": false,
-  "tags": ["launcher", "aosp", "personalization", "open-source"]
+  "tags": [
+    "launcher",
+    "aosp",
+    "personalization",
+    "open-source",
+    "Personalization"
+  ]
 }

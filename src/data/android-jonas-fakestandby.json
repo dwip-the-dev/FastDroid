@@ -1,7 +1,7 @@
 {
   "id": "android.jonas.fakestandby",
   "name": "FakeStandby",
-  "category": "System",
+  "category": "Utilities",
   "icon": "https://github.com/JonasBernard/FakeStandby/blob/master/app/src/main/res/mipmap-hdpi/app_icon_final.png?raw=true",
   "description": "Most smartphones these days have long-living batteries, but who doesn't want their phone to last for just an hour more? While using an app, you maybe not nessesarily need your display. So, why don’t turn it off? Up to 20% of your battery power is consumed by the display. FakeStandby is an Android app to turn off your screen while keeping apps running. This includes foreground jobs, which means you can keep listening to music on YouTube staying online on WhatsApp and other text messengers running your favorite game all with your screen turned off.",
   "source": "https://github.com/JonasBernard/FakeStandby",

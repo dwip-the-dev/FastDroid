@@ -1,7 +1,7 @@
 {
   "id": "olauncher",
   "name": "Olauncher",
-  "category": "Personalization",
+  "category": "Utilities",
   "icon": "https://f-droid.org/repo/app.olauncher/en-US/icon_dC7NX4YV3a8I-l_I9f4YUmeWYIdKAcVcU_0G4LaZnHw=.png",
   "description": "A minimal, gesture-based launcher for Android designed for simplicity and speed.",
   "source": "https://github.com/tanujnotes/Olauncher",
@@ -10,5 +10,11 @@
   "sha256": null,
   "lastUpdated": "2026-02-21",
   "featured": false,
-  "tags": ["launcher", "personalization", "minimal", "open-source"]
+  "tags": [
+    "launcher",
+    "personalization",
+    "minimal",
+    "open-source",
+    "Personalization"
+  ]
 }

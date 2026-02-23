@@ -1,7 +1,7 @@
 {
   "id": "agersant.polaris",
   "name": "Polaris",
-  "category": "Multimedia",
+  "category": "Media",
   "icon": "https://github.com/agersant/polaris-android/raw/refs/heads/master/assets/images/logo.svg",
   "description": "Connect to your Polaris server and listen to music on the go!",
   "source": "https://github.com/agersant/polaris-android",

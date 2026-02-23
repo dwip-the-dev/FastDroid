@@ -1,7 +1,7 @@
 {
   "id": "fairemail",
   "name": "FairEmail",
-  "category": "Communication",
+  "category": "Social",
   "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2gZjmMvRWfvq_gsSNj00DRCMQt0WHwIpQ4JPAHtxATg&s=10",
   "description": "A privacy-focused open-source email app that supports multiple accounts, unified inbox, and a strong preference for minimal permissions and no trackers.",
   "source": "https://github.com/M66B/FairEmail",
@@ -15,6 +15,7 @@
     "communication",
     "privacy",
     "open-source",
-    "utilities"
+    "utilities",
+    "Communication"
   ]
 }

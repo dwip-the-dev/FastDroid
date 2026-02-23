@@ -1,7 +1,7 @@
 {
   "id": "termux",
   "name": "Termux",
-  "category": "Developer",
+  "category": "Developer Tools",
   "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Termux.svg/1280px-Termux.svg.png",
   "description": "A powerful terminal emulator and Linux environment for Android, with package management and shell access.",
   "source": "https://github.com/termux/termux-app",
@@ -10,5 +10,11 @@
   "sha256": null,
   "lastUpdated": "2026-02-21",
   "featured": false,
-  "tags": ["terminal", "linux", "developer", "open-source"]
+  "tags": [
+    "terminal",
+    "linux",
+    "developer",
+    "open-source",
+    "Developer"
+  ]
 }
