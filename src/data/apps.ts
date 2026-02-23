@@ -2,23 +2,39 @@
 
 import { AppData } from "@/types/app";
 
-const modules = import.meta.glob<AppData>("./**.json", { eager: true, import: "default" });
+const modules = import.meta.glob<AppData>("./**/*.json", {
+  eager: true,
+  import: "default",
+});
 
 const allApps: AppData[] = Object.values(modules);
 
-// Shuffle deterministically using a seed
-function seededShuffle(arr: AppData[]): AppData[] {
+// Random per session seed
+function getSessionSeed(): number {
+  const KEY = "fastdroid-seed";
+  const stored = sessionStorage.getItem(KEY);
+
+  if (stored) return Number(stored);
+
+  const seed = Math.floor(Math.random() * 1_000_000_000);
+  sessionStorage.setItem(KEY, seed.toString());
+  return seed;
+}
+
+function seededShuffle(arr: AppData[], seed: number): AppData[] {
   const copy = [...arr];
-  let seed = 42;
+  let s = seed;
+
   for (let i = copy.length - 1; i > 0; i--) {
-    seed = (seed * 16807 + 0) % 2147483647;
-    const j = seed % (i + 1);
+    s = (s * 16807) % 2147483647;
+    const j = s % (i + 1);
     [copy[i], copy[j]] = [copy[j], copy[i]];
   }
+
   return copy;
 }
 
-export const shuffledApps = seededShuffle(allApps);
+export const shuffledApps = seededShuffle(allApps, getSessionSeed());
 
 export const categoryList = [...new Set(allApps.map((a) => a.category))].sort();
 
@@ -29,7 +45,10 @@ for (const app of allApps) {
 
 export function getAppSlug(app: AppData | string): string {
   const name = typeof app === "string" ? app : app.name;
-  return name.replace(/[^a-zA-Z0-9]+/g, "-").replace(/^-|-$/g, "");
+  return name
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
 }
 
 export function getAppBySlug(slug: string): AppData | undefined {
