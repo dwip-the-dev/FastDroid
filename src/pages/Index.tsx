@@ -12,7 +12,7 @@ import {
   getAppSlug,
 } from "@/data/apps";
 
-const APPS_PER_PAGE = 20;
+const APPS_PER_PAGE = 30;
 
 type View = "home" | "categories";
 
