@@ -177,12 +177,12 @@ const Index = () => {
               <div
                 className="
                   grid
-                  grid-cols-3
-                  sm:grid-cols-4
-                  md:grid-cols-5
-                  lg:grid-cols-6
-                  xl:grid-cols-8
-                  2xl:grid-cols-10
+                  grid-cols-4
+                  sm:grid-cols-5
+                  md:grid-cols-6
+                  lg:grid-cols-10
+                  xl:grid-cols-20
+                  2xl:grid-cols-30
                   gap-3
                 "
               >
