@@ -1,4 +1,4 @@
-import { useState, useMemo, useCallback, useEffect } from "react";
+import { useState, useMemo, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import TopBar from "@/components/store/TopBar";
 import AppCard from "@/components/store/AppCard";
@@ -12,12 +12,7 @@ import {
   getAppSlug,
 } from "@/data/apps";
 
-function getAppsPerPage() {
-  if (window.innerWidth >= 1536) return 96; // ultrawide
-  if (window.innerWidth >= 1280) return 72; // desktop
-  if (window.innerWidth >= 1024) return 60; // laptop
-  return 30; // mobile / tablet
-}
+const APPS_PER_PAGE = 20;
 
 type View = "home" | "categories";
 
@@ -29,21 +24,13 @@ const Index = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [aboutOpen, setAboutOpen] = useState(false);
   const [view, setView] = useState<View>("home");
-  const [pageDirection, setPageDirection] = useState<"left" | "right" | null>(
-    null
-  );
+  const [pageDirection, setPageDirection] =
+    useState<"left" | "right" | null>(null);
   const [animKey, setAnimKey] = useState(0);
-
-  const [appsPerPage, setAppsPerPage] = useState(getAppsPerPage());
-
-  useEffect(() => {
-    const onResize = () => setAppsPerPage(getAppsPerPage());
-    window.addEventListener("resize", onResize);
-    return () => window.removeEventListener("resize", onResize);
-  }, []);
 
   const isSearching = searchQuery.trim().length > 0;
 
+  /* ---------- FILTERING ---------- */
   const filteredApps = useMemo(() => {
     let list = shuffledApps;
 
@@ -67,19 +54,20 @@ const Index = () => {
 
   const totalPages = Math.max(
     1,
-    Math.ceil(filteredApps.length / appsPerPage)
+    Math.ceil(filteredApps.length / APPS_PER_PAGE)
   );
   const safePage = Math.min(currentPage, totalPages);
 
   const paginatedApps = useMemo(
     () =>
       filteredApps.slice(
-        (safePage - 1) * appsPerPage,
-        safePage * appsPerPage
+        (safePage - 1) * APPS_PER_PAGE,
+        safePage * APPS_PER_PAGE
       ),
-    [filteredApps, safePage, appsPerPage]
+    [filteredApps, safePage]
   );
 
+  /* ---------- PAGINATION ---------- */
   const goToPage = useCallback(
     (page: number, dir?: "left" | "right") => {
       setPageDirection(dir || (page > currentPage ? "left" : "right"));
@@ -89,6 +77,7 @@ const Index = () => {
     [currentPage]
   );
 
+  /* ---------- CATEGORY ---------- */
   const handleCategorySelect = useCallback((cat: string) => {
     setActiveCategory(cat);
     setCurrentPage(1);
@@ -102,12 +91,14 @@ const Index = () => {
     setAnimKey((k) => k + 1);
   }, []);
 
+  /* ---------- SEARCH ---------- */
   const handleSearchChange = useCallback((q: string) => {
     setSearchQuery(q);
     setCurrentPage(1);
     if (q.trim()) setView("home");
   }, []);
 
+  /* ---------- SWIPE ---------- */
   const [touchStart, setTouchStart] = useState<number | null>(null);
 
   const handleTouchStart = (e: React.TouchEvent) =>
@@ -115,6 +106,7 @@ const Index = () => {
 
   const handleTouchEnd = (e: React.TouchEvent) => {
     if (touchStart === null) return;
+
     const diff = touchStart - e.changedTouches[0].clientX;
 
     if (Math.abs(diff) > 60) {
@@ -128,7 +120,9 @@ const Index = () => {
   };
 
   const swipeStyle =
-    pageDirection === "left" || pageDirection === "right"
+    pageDirection === "left"
+      ? "animate-[page-in_0.3s_ease-out]"
+      : pageDirection === "right"
       ? "animate-[page-in_0.3s_ease-out]"
       : "animate-fade-in";
 
@@ -183,8 +177,13 @@ const Index = () => {
               <div
                 className="
                   grid
+                  grid-cols-3
+                  sm:grid-cols-4
+                  md:grid-cols-5
+                  lg:grid-cols-6
+                  xl:grid-cols-8
+                  2xl:grid-cols-10
                   gap-3
-                  [grid-template-columns:repeat(auto-fill,minmax(150px,1fr))]
                 "
               >
                 {paginatedApps.map((app, i) => (
