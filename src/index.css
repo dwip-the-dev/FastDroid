@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer base {
+  /* ===== LIGHT MODE ===== */
   :root {
     --background: 0 0% 98%;
     --foreground: 220 14% 10%;
@@ -50,6 +51,7 @@
     --dim: 220 14% 10% / 0.4;
   }
 
+  /* ===== DARK MODE ===== */
   .dark {
     --background: 220 14% 8%;
     --foreground: 210 20% 92%;

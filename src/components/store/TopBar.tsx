@@ -1,5 +1,6 @@
 import { Search, X, Info, LayoutGrid, Sun, Moon } from "lucide-react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { useTheme } from "@/components/ThemeProvider";
 
 interface TopBarProps {

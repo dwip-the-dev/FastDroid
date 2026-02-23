@@ -8,7 +8,7 @@ import {
   Shield,
   Zap,
 } from "lucide-react";
-import { useState } from "react";
+import { useState, useMemo } from "react";
 
 interface FooterProps {
   currentPage: number;
@@ -19,6 +19,17 @@ interface FooterProps {
 const Footer = ({ currentPage, totalPages, onPageChange }: FooterProps) => {
   const [showDisclaimer, setShowDisclaimer] = useState(false);
   const [showSubmit, setShowSubmit] = useState(false);
+
+  // Sliding window of max 3 page numbers
+  const visiblePages = useMemo(() => {
+    if (totalPages <= 3) return Array.from({ length: totalPages }, (_, i) => i + 1);
+    
+    let start = currentPage - 1;
+    if (start < 1) start = 1;
+    if (start + 2 > totalPages) start = totalPages - 2;
+    
+    return [start, start + 1, start + 2];
+  }, [currentPage, totalPages]);
 
   return (
     <footer className="sticky bottom-0 z-40 bg-background/95 backdrop-blur-sm border-t border-border">
@@ -34,19 +45,45 @@ const Footer = ({ currentPage, totalPages, onPageChange }: FooterProps) => {
               ← Prev
             </button>
             <div className="flex items-center gap-1">
-              {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
+              {visiblePages[0] > 1 && (
+                <>
+                  <button
+                    onClick={() => onPageChange(1)}
+                    className="w-8 h-8 rounded-md text-xs font-medium text-muted-foreground hover:text-foreground hover:bg-accent transition-colors"
+                  >
+                    1
+                  </button>
+                  {visiblePages[0] > 2 && (
+                    <span className="w-6 text-center text-xs text-muted-foreground">…</span>
+                  )}
+                </>
+              )}
+              {visiblePages.map((p) => (
                 <button
                   key={p}
                   onClick={() => onPageChange(p)}
-                  className={`w-8 h-8 rounded-md text-xs font-medium transition-colors ${
+                  className={`w-8 h-8 rounded-md text-xs font-medium transition-all duration-200 ${
                     p === currentPage
-                      ? "bg-primary text-primary-foreground"
+                      ? "bg-primary text-primary-foreground scale-110"
                       : "text-muted-foreground hover:text-foreground hover:bg-accent"
                   }`}
                 >
                   {p}
                 </button>
               ))}
+              {visiblePages[visiblePages.length - 1] < totalPages && (
+                <>
+                  {visiblePages[visiblePages.length - 1] < totalPages - 1 && (
+                    <span className="w-6 text-center text-xs text-muted-foreground">…</span>
+                  )}
+                  <button
+                    onClick={() => onPageChange(totalPages)}
+                    className="w-8 h-8 rounded-md text-xs font-medium text-muted-foreground hover:text-foreground hover:bg-accent transition-colors"
+                  >
+                    {totalPages}
+                  </button>
+                </>
+              )}
             </div>
             <button
               onClick={() => onPageChange(currentPage + 1)}

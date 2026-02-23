@@ -1,44 +1,19 @@
-import { useState, useMemo, useCallback, useRef } from "react";
+import { useState, useMemo, useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 import TopBar from "@/components/store/TopBar";
 import AppCard from "@/components/store/AppCard";
-import AppDetailPanel from "@/components/store/AppDetailPanel";
 import Footer from "@/components/store/Footer";
 import AboutDialog from "@/components/store/AboutDialog";
 import CategoryGrid from "@/components/store/CategoryGrid";
-import type { AppData } from "@/types/app";
+import { shuffledApps, categoryList, appsByCategory, getAppSlug } from "@/data/apps";
 
-const APPS_PER_PAGE = 30;
-
-const modules = import.meta.glob("@/data/*.json", { eager: true, import: "default" });
-
-const allApps: AppData[] = (Object.values(modules) as AppData[]).filter(
-  (app) => app && app.id && app.name
-);
-
-function shuffleArray<T>(arr: T[]): T[] {
-  const shuffled = [...arr];
-  let seed = Date.now() % 10000;
-  for (let i = shuffled.length - 1; i > 0; i--) {
-    seed = (seed * 16807 + 11) % 2147483647;
-    const j = seed % (i + 1);
-    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-  }
-  return shuffled;
-}
-
-const shuffledApps = shuffleArray(allApps);
-
-const categoryList = Array.from(new Set(allApps.map((a) => a.category))).sort();
-const appsByCategory: Record<string, number> = {};
-allApps.forEach((a) => {
-  appsByCategory[a.category] = (appsByCategory[a.category] || 0) + 1;
-});
+const APPS_PER_PAGE = 15;
 
 type View = "home" | "categories";
 
 const Index = () => {
+  const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState("");
-  const [selectedApp, setSelectedApp] = useState<AppData | null>(null);
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
   const [aboutOpen, setAboutOpen] = useState(false);
@@ -50,9 +25,7 @@ const Index = () => {
 
   const filteredApps = useMemo(() => {
     let list = shuffledApps;
-    if (activeCategory) {
-      list = list.filter((a) => a.category === activeCategory);
-    }
+    if (activeCategory) list = list.filter((a) => a.category === activeCategory);
     if (isSearching) {
       const q = searchQuery.toLowerCase();
       list = list.filter(
@@ -166,7 +139,7 @@ const Index = () => {
               <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-3">
                 {paginatedApps.map((app, i) => (
                   <div key={app.id} style={{ animationDelay: `${i * 30}ms` }} className="animate-fade-in opacity-0 [animation-fill-mode:forwards]">
-                    <AppCard app={app} onClick={() => setSelectedApp(app)} />
+                    <AppCard app={app} onClick={() => navigate(`/app/${getAppSlug(app)}`)} />
                   </div>
                 ))}
               </div>
@@ -185,9 +158,6 @@ const Index = () => {
         onPageChange={(p) => goToPage(p)}
       />
       <AboutDialog open={aboutOpen} onClose={() => setAboutOpen(false)} />
-      {selectedApp && (
-        <AppDetailPanel app={selectedApp} onClose={() => setSelectedApp(null)} />
-      )}
     </div>
   );
 };
