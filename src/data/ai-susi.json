@@ -2,7 +2,7 @@
   "id": "ai.susi",
   "name": "SUSI.AI",
   "category": "AI Chat",
-  "icon": "https://github.com/fossasia/susi_android/blob/development/app/src/main/ic_launcher-web.png?raw=true"
+  "icon": "https://github.com/fossasia/susi_android/blob/development/app/src/main/ic_launcher-web.png?raw=true",
   "description": "Susi AI is an intelligent personal assistant",
   "source": "https://github.com/fossasia/susi_android",
   "downloadUrl": "https://github.com/fossasia/susi_android/releases/download/v1.0.14/susi-ai-master-app-playStore-release.apk",
