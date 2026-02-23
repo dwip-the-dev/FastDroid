@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen bg-black flex flex-col items-center justify-center text-center"
+    <div className="min-h-screen bg-black flex flex-col items-center justify-center text-center">
       <img
         src="/404-mobile.jpg"
         alt="404 Mobile"
