@@ -7,7 +7,7 @@
 
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/((?!inventory\\.csv).*)",
       "destination": "/index.html"
     }
   ]
