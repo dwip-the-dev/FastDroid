@@ -1,0 +1,17 @@
+{
+  "id": "app.pachli",
+  "name": "Pachli for Mastodon",
+  "category": "Browser",
+  "icon": "https://f-droid.org/repo/app.pachli/en-US/icon_Q-z-zXEaYDS9Ti727f_7KC377-TakKGUjCktzTaNY1w=.png",
+  "description": "Pachli is a full-featured client for Mastodon and similar servers. Read, reply, filter, post, favourite, and boost posts. Translate posts from other languages. Your timeline is cached locally, so you can read when offline. Draft posts now, to finish them later. Write posts now, schedule them to send later. Read and post from multiple accounts. Multiple themes. Focused on ensuring all functionality is available to people with accessibility needs.",
+  "source": "https://github.com/pachli/pachli-android",
+  "downloadUrl": "https://github.com/pachli/pachli-android/releases/download/v3.3.1/Pachli_3.3.1_45_9d1a9000_blueGithub_release-signed.apk",
+  "releaseTag": "3.3.1",
+  "sha256": null,
+  "lastUpdated": "2025-12-31",
+  "featured": false,
+  "tags": [
+    "Internet",
+    "Social Network"
+  ]
+}

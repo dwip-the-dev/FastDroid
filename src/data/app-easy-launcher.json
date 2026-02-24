@@ -1,0 +1,18 @@
+{
+  "id": "app.easy.launcher",
+  "name": "Easy Launcher - Minimal launcher",
+  "category": "Utilities",
+  "icon": "https://f-droid.org/repo/app.easy.launcher/en-US/icon_ji6B5KIbP2H1hr4njp36Hq5w4x371oQ4iJtRCx98PoE=.png",
+  "description": "Features:- Favorite App Quick Access: Display your most-used apps on the home screen in text format for swift access, streamlining your operations. - Hide Apps: Easily conceal apps you don't want visible, keeping your home screen clean and focused on essential content. - Rename Apps: Personalize your apps with custom names that sync seamlessly between favorites and all apps. - Locking: Secure your privacy and data with fingerprint lock for selected apps and settings. - No Internet Permissions: No use of INTERNET permissions, ensuring your data remains private.",
+  "source": "https://github.com/DroidWorksStudio/EasyLauncher",
+  "downloadUrl": "https://github.com/CodeWorksCreativeHub/EasyLauncher/releases/download/0.3.3/EasyLauncher-0.3.3-Signed.apk",
+  "releaseTag": "0.3.3",
+  "sha256": null,
+  "lastUpdated": "2025-07-24",
+  "featured": false,
+  "tags": [
+    "Launcher",
+    "System",
+    "Theming"
+  ]
+}

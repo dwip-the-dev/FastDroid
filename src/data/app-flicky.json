@@ -1,0 +1,17 @@
+{
+  "id": "app.flicky",
+  "name": "Flicky",
+  "category": "App Stores",
+  "icon": "https://raw.githubusercontent.com/mlm-games/flicky/kotlin/assets/banner.svg",
+  "description": "An FDroid client with a TV friendly UI. Does support android devices, but UI is not prioritized for it.",
+  "source": "https://github.com/mlm-games/flicky",
+  "downloadUrl": "https://github.com/mlm-games/flicky/releases/download/4.2.3/flicky-4.2.3-arm64-v8a.apk",
+  "releaseTag": "4.2.2",
+  "sha256": null,
+  "lastUpdated": "2026-02-21",
+  "featured": false,
+  "tags": [
+    "App Store & Updater",
+    "System"
+  ]
+}

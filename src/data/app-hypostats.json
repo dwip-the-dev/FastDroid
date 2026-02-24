@@ -1,0 +1,16 @@
+{
+  "id": "app.hypostats",
+  "name": "HypoStats: Log Your Hypos",
+  "category": "Health & Fitness",
+  "icon": "https://f-droid.org/repo/app.hypostats/en-US/icon_kn-DFXsd4eMefHccjkALdW5E20AVUr8hwUn0xccfWh4=.png",
+  "description": "HypoStats is a simple Android app for noting hypoglycemic episodes. Quickly record treatments, review your history and see statistics that help you spot patterns over time. The app is designed for diabetics and other people struggling with hypoglycemia for any reason. Privacy Notice Hypoglycemia is a personal matter. Many people are afraid or embarrassed to talk about their hypos even with healthcare providers. Therefore, this app doesn't share your data and doesn't track you in any way. There are no ads and no analytics - the app does not collect any data whatsoever and works entirely offline on your device.",
+  "source": "https://github.com/psfinaki/HypoStats",
+  "downloadUrl": "https://github.com/psfinaki/HypoStats/releases/download/v0.5.8/app.hypostats-release.apk",
+  "releaseTag": "0.5.8",
+  "sha256": null,
+  "lastUpdated": "2026-01-13",
+  "featured": false,
+  "tags": [
+    "Sports & Health"
+  ]
+}

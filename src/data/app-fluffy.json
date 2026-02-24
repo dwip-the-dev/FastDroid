@@ -1,0 +1,16 @@
+{
+  "id": "app.fluffy",
+  "name": "Fluffy",
+  "category": "Media",
+  "icon": "https://f-droid.org/repo/app.fluffy/en-US/icon_CIlxv5rMcqKzANnR6Z7McjHtwIsPXXep8r2PieCeEXg=.png",
+  "description": "Fluffy is a lightweight file manager for phones, tablets, and Android TV. Browse internal storage or any SAF folder- Create and extract archives: ZIP, 7z, TAR, TGZ, TBZ2, TXZ, APK/JAR- Encrypted archives: ZIP (AES) and 7z\n- Background tasks with progress and a Task Center\n- Open archives like folders, or extract selected items\n- TV-friendly UI with DPAD focus and big targets- Works without network. No ads, no trackers.",
+  "source": "https://github.com/mlm-games/fluffy",
+  "downloadUrl": "https://github.com/mlm-games/Fluffy/releases/download/4.1.3/fluffy-4.1.3-arm64-v8a.apk",
+  "releaseTag": "4.1.3",
+  "sha256": null,
+  "lastUpdated": "2026-02-21",
+  "featured": false,
+  "tags": [
+    "Multimedia"
+  ]
+}

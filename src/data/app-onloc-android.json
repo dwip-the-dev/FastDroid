@@ -1,0 +1,16 @@
+{
+  "id": "app.onloc.android",
+  "name": "Onloc",
+  "category": "Navigation",
+  "icon": "https://raw.githubusercontent.com/onloc-app/onloc-ui/refs/heads/main/public/favicon.svg",
+  "description": "Onloc lets you track your device in case it gets lost.- See your device's location in real time- Ring lost devices",
+  "source": "https://github.com/onloc-app/onloc-android",
+  "downloadUrl": "https://github.com/onloc-app/onloc-android/releases/download/1.1.4/onloc-1.1.4.apk",
+  "releaseTag": "1.1.4",
+  "sha256": null,
+  "lastUpdated": "2026-01-23",
+  "featured": false,
+  "tags": [
+    "Location Tracker & Sharer"
+  ]
+}

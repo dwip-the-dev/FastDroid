@@ -1,0 +1,18 @@
+{
+  "id": "app.mlauncher",
+  "name": "Multi Launcher ‧ Home Screen",
+  "category": "Utilities",
+  "icon": "https://f-droid.org/repo/app.mlauncher/en-US/icon_NODpJCpHaoNnvtvk0kYpHNtjGAC5JcTTv-xirNe8wGU=.png",
+  "description": "Multi Launcher: A Clean, Simple Android Launcher Built for Readability and Control. Looking for a launcher that ditches the clutter and keeps things easy? Multi Launcher is a powerful yet minimalist Android launcher that replaces tiny icons with clear, readable text buttons, making your phone easier to navigate. Whether you want a simple home screen, need large text for visibility, or prefer quick gesture-based actions, Multi Launcher gives you full control without overwhelming you with options.",
+  "source": "https://github.com/DroidWorksStudio/mLauncher",
+  "downloadUrl": "https://github.com/CodeWorksCreativeHub/mLauncher/releases/download/1.11.4.2/MultiLauncher-1.11.4.2-Signed.apk",
+  "releaseTag": "1.11.3.3",
+  "sha256": null,
+  "lastUpdated": "2026-01-07",
+  "featured": false,
+  "tags": [
+    "Launcher",
+    "System",
+    "Theming"
+  ]
+}

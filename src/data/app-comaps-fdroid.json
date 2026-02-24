@@ -1,0 +1,16 @@
+{
+  "id": "app.comaps.fdroid",
+  "name": "CoMaps - Hike, Bike, Drive Offline with Privacy",
+  "category": "Navigation",
+  "icon": "https://codeberg.org/comaps/comaps/media/branch/main/docs/badges/logo.svg",
+  "description": "A community-led free & open source maps app based on OpenStreetMap data and reinforced with commitment to transparency, privacy and being not-for-profit.",
+  "source": "https://codeberg.org/comaps/comaps",
+  "downloadUrl": "https://codeberg.org/comaps/comaps/releases/download/v2026.02.23-9/CoMaps-26022309-main-release.apk",
+  "releaseTag": "2026.02.09-4-FDroid",
+  "sha256": null,
+  "lastUpdated": "2026-02-10",
+  "featured": false,
+  "tags": [
+    "Navigation"
+  ]
+}

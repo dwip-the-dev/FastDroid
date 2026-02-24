@@ -1,0 +1,16 @@
+{
+  "id": "app.crossword.yourealwaysbe.forkyzscanner",
+  "name": "Forkyz Scanner",
+  "category": "Games",
+  "icon": "https://gitlab.com/uploads/-/system/project/avatar/45411910/forkyz_scanner_icon.png",
+  "description": "Crossword-scanning companion app to Forkyz crossword app. Supports scanning puzzles from the camera, image files, or PDF. Scanning is a multi-step process: scan the grid, then the columns of clues. The scan results can be edited to make corrections. The puzzle can then be shared with other apps (e.g. Forkyz) for playing. The app is somewhat heavyweight: it includes OpenCV for image processing and Tesseract for text recognition. Language packs for text recognition must be downloaded from settings before this feature can be used.",
+  "source": "https://gitlab.com/Hague/forkyzscanner",
+  "downloadUrl": "https://gitlab.com/Hague/forkyzscanner/-/releases/v8/downloads/apk",
+  "releaseTag": "8",
+  "sha256": null,
+  "lastUpdated": "2025-03-06",
+  "featured": false,
+  "tags": [
+    "Games"
+  ]
+}

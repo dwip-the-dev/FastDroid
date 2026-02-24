@@ -1,0 +1,17 @@
+{
+  "id": "app.michaelwuensch.bitbanana",
+  "name": "BitBanana",
+  "category": "Productivity",
+  "icon": "https://f-droid.org/repo/app.michaelwuensch.bitbanana/en-US/icon_Bwtc77qvMnfGxPfITLr9-I2hl4eC-loFp5e2GJb0GuM=.png",
+  "description": "⚡️ Superpowers for you and your Bitcoin Lightning node! Use and manage your node wherever you are. ⚡️ BitBanana is a native Android app for node operators focused on user experience and ease of use. While it is not a wallet on its own, BitBanana works like a remote control, allowing you to use your node as a wallet wherever you go. The app is designed with an educational approach, providing the user with guidance on every aspect of node operation. BitBanana is open source and fully self-custodial, which means you are in full control of your funds.",
+  "source": "https://github.com/michaelWuensch/BitBanana",
+  "downloadUrl": "https://github.com/michaelWuensch/BitBanana/releases/download/v1.0.0/bitbanana-1.0.0-release.apk",
+  "releaseTag": "1.0.0",
+  "sha256": null,
+  "lastUpdated": "2025-09-10",
+  "featured": false,
+  "tags": [
+    "Money",
+    "Wallet"
+  ]
+}

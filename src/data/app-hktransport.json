@@ -1,0 +1,17 @@
+{
+  "id": "app.hkTransport",
+  "name": "HK Transport",
+  "category": "Navigation",
+  "icon": "https://raw.githubusercontent.com/angus6b23/hk-transport/master/assets/logo.svg",
+  "description": "HK Transport makes use of data from HK gov. In the app, you can find data of- Bus- MTR- Minibus- Tram（Estimated time of arrival not available- Light Rail- Ferry（Estimated time of arrival not available).",
+  "source": "https://github.com/angus6b23/hk-transport",
+  "downloadUrl": "https://github.com/angus6b23/hk-transport/releases/download/v1.0.6/app.hkTransport-1.0.6.apk",
+  "releaseTag": "1.0.6",
+  "sha256": null,
+  "lastUpdated": "2024-09-06",
+  "featured": false,
+  "tags": [
+    "Navigation",
+    "Public Transport"
+  ]
+}

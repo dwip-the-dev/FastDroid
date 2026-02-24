@@ -1,0 +1,18 @@
+{
+  "id": "app.dumdum",
+  "name": "DumDum",
+  "category": "Utilities",
+  "icon": "https://raw.githubusercontent.com/Project-Mandarin/DumDum/refs/heads/master/metadata/en-US/images/logo.png",
+  "description": "Designed as a simple, minimalistic & universal client for connecting to SOCKS/HTTP/HTTPS proxies and based on VpnService.",
+  "source": "https://github.com/Project-Mandarin/DumDum",
+  "downloadUrl": "https://github.com/Project-Mandarin/DumDum/releases/download/1.1.4/DumDum-1.1.4.apk",
+  "releaseTag": "1.1.4",
+  "sha256": null,
+  "lastUpdated": "2025-10-18",
+  "featured": false,
+  "tags": [
+    "Connectivity",
+    "Internet",
+    "VPN & Proxy"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "app.crossword.yourealwaysbe.forkyz",
+  "name": "Forkyz",
+  "category": "Games",
+  "icon": "https://f-droid.org/repo/app.crossword.yourealwaysbe.forkyz/en-US/icon_9RC0QqpRkXPPUGy-rA-Mx9gDUvu7pF_qp44KtVq1lCw=.png",
+  "description": "Forkyz is an unofficial fork of the Shortyz crossword puzzles app with several new features and compatible with recent Android versions. A variety of crossword puzzle types can be imported from files or downloaded and played. Imports support a variety of file formats, including AcrossLite (.puz), JPZ, and IPuz. A list of links to online puzzle creators is given. Puzzles can also be downloaded directly using the built-in downloaders.",
+  "source": "https://gitlab.com/Hague/forkyz",
+  "downloadUrl": "https://gitlab.com/Hague/forkyz/-/releases/v78/downloads/apk",
+  "releaseTag": "78",
+  "sha256": null,
+  "lastUpdated": "2026-02-13",
+  "featured": false,
+  "tags": [
+    "Games"
+  ]
+}

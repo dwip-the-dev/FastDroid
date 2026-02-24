@@ -1,0 +1,17 @@
+{
+  "id": "app.myzel394.alibi",
+  "name": "Alibi",
+  "category": "Media",
+  "icon": "https://f-droid.org/repo/app.myzel394.alibi/en-US/icon_g-3seR8BJesN3Bdli3Qk1XgYFAzuf_e4NlFNGBz_3Lc=.png",
+  "description": "Alibi keeps recording in the background and saves the last 30 minutes at your request. Everything is completely configurable. No internet connection required.",
+  "source": "https://github.com/Myzel394/Alibi",
+  "downloadUrl": "https://github.com/Myzel394/Alibi/releases/download/v0.5.3/app-arm64-v8a-release.apk"
+  "releaseTag": "0.5.3",
+  "sha256": null,
+  "lastUpdated": "2024-09-16",
+  "featured": false,
+  "tags": [
+    "Multimedia",
+    "System"
+  ]
+}
