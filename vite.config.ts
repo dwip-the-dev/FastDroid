@@ -2,8 +2,6 @@ import { defineConfig } from "vite"
 import react from "@vitejs/plugin-react-swc"
 import path from "path"
 import Sitemap from "vite-plugin-sitemap"
-
-// Import app data for dynamic routes
 import fs from "fs"
 
 function getAppSlugs(): string[] {
@@ -20,6 +18,47 @@ function getAppSlugs(): string[] {
   }
 }
 
+function getMaintenanceStatus(lastUpdated: string): string {
+  if (!lastUpdated) return "Unknown"
+  const year = new Date(lastUpdated).getFullYear()
+  if (year < 2022) return "Maybe Abandoned"
+  if (year < 2024) return "Not updated in a while"
+  return "Maintained"
+}
+
+function escapeCsv(val: string): string {
+  if (!val) return ""
+  if (val.includes(",") || val.includes('"') || val.includes("\n")) {
+    return `"${val.replace(/"/g, '""')}"`
+  }
+  return val
+}
+
+function generateInventoryCsv(): string {
+  const dataDir = path.resolve(__dirname, "src/data")
+  const files = fs.readdirSync(dataDir).filter((f: string) => f.endsWith(".json"))
+  const header = "id,name,category,version,source,downloadUrl,lastUpdated,status"
+  const rows = files.map((f: string) => {
+    const d = JSON.parse(fs.readFileSync(path.join(dataDir, f), "utf-8"))
+    return [
+      escapeCsv(d.id || ""),
+      escapeCsv(d.name || ""),
+      escapeCsv(d.category || ""),
+      escapeCsv(d.releaseTag || ""),
+      escapeCsv(d.source || ""),
+      escapeCsv(d.downloadUrl || ""),
+      escapeCsv(d.lastUpdated || ""),
+      escapeCsv(getMaintenanceStatus(d.lastUpdated || "")),
+    ].join(",")
+  })
+  return [header, ...rows].join("\n")
+}
+
+// Generate CSV into public/ so it's available in dev and copied to dist on build
+const csvContent = generateInventoryCsv()
+const publicDir = path.resolve(__dirname, "public")
+fs.writeFileSync(path.join(publicDir, "inventory.csv"), csvContent)
+
 const dynamicRoutes = getAppSlugs()
 
 export default defineConfig({
@@ -33,7 +72,7 @@ export default defineConfig({
   plugins: [
     react(),
     Sitemap({
-      hostname: "https://fastdroid.com",
+      hostname: "https://fastdroid.vercel.app",
       dynamicRoutes: ["/", "/home", "/search", ...dynamicRoutes],
       readable: true,
       generateRobotsTxt: false,
