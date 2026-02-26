@@ -1,0 +1,16 @@
+{
+  "id": "app.shosetsu.android.fdroid",
+  "name": "Shosetsu",
+  "category": "Reading & Education",
+  "icon": "https://gitlab.com/shosetsuorg/shosetsu/-/raw/main/android/src/main/res/mipmap-xxxhdpi/ic_launcher.png?ref_type=heads",
+  "description": "Shosetsu is the extendable novel reader for Android.",
+  "source": "https://gitlab.com/shosetsuorg/shosetsu",
+  "downloadUrl": "https://cdn.shosetsu.app/v2.4.4/shosetsu-v2.4.4.apk",
+  "releaseTag": "2.4.4-fdroid",
+  "sha256": null,
+  "lastUpdated": "2023-08-03",
+  "featured": false,
+  "tags": [
+    "Reading"
+  ]
+}

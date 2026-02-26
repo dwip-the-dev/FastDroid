@@ -1,0 +1,17 @@
+{
+  "id": "app.seeneva.reader",
+  "name": "Seeneva: smart comic reader",
+  "category": "Reading & Education",
+  "icon": "https://github.com/Seeneva/seeneva-reader-android/raw/master/docs/img/icon/seeneva_icon.png",
+  "description": "A libre smart powered comic book reader.",
+  "source": "https://github.com/Seeneva/seeneva-reader-android",
+  "downloadUrl": "https://github.com/Seeneva/seeneva-reader-android/releases/download/v0.1.2/seeneva-0.1.2-gh-arm64-v8a.apk",
+  "releaseTag": "0.1.2",
+  "sha256": null,
+  "lastUpdated": "2023-11-11",
+  "featured": false,
+  "tags": [
+    "Ebook Reader",
+    "Reading"
+  ]
+}

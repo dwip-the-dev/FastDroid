@@ -1,0 +1,16 @@
+{
+  "id": "app.pomodorot",
+  "name": "Pomodorot",
+  "category": "Games",
+  "icon": "https://f-droid.org/repo/app.pomodorot/en-US/icon_RWx2f5IvOAP6g0QHLEyroZzKvp9NSTf2j8J4tZM-m-A=.png",
+  "description": "Pomodorot is a timer that can be used for 20-minute breaks during the workday, or as a timer for the Pomodoro Technique.",
+  "source": "https://github.com/mlm-games/pomodorot",
+  "downloadUrl": "https://github.com/mlm-games/pomodorot/releases/download/0.13.3/pomodorot-android-arm64.apk",
+  "releaseTag": "0.13.3",
+  "sha256": null,
+  "lastUpdated": "2026-02-16",
+  "featured": false,
+  "tags": [
+    "Games"
+  ]
+}

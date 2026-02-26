@@ -1,0 +1,17 @@
+{
+  "id": "app.prav.client",
+  "name": "Prav",
+  "category": "Browser",
+  "icon": "https://codeberg.org/prav/prav/raw/branch/main/src/quicksy/new_launcher-web.png",
+  "description": "Whether you want to text your friends and family, or to make calls, Prav app makes it easy for you. It provides convenient onboarding and user-friendly interface. We believe privacy is a fundamental right and should be easily exercised by anyone. With Prav, your chats are private and only you can read them https://prav.app/privacy-policy/. It is based on XMPP protocol, so users can talk to any other XMPP users all over the world, without being locked-in to a service. Prav's source code is available publicly under a free license, providing transparency and audatibility.",
+  "source": "https://codeberg.org/prav/prav",
+  "downloadUrl": "https://codeberg.org/prav/prav/releases/download/v2.19.4-1+prav/Conversations-2.19.4-1-quicksy-free-arm64-v8a-release.apk",
+  "releaseTag": "2.19.4-1+prav",
+  "sha256": null,
+  "lastUpdated": "2025-10-07",
+  "featured": false,
+  "tags": [
+    "Internet",
+    "Messaging"
+  ]
+}

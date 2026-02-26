@@ -1,0 +1,17 @@
+{
+  "id": "app.traced_it",
+  "name": "traced it",
+  "category": "Productivity",
+  "icon": "https://raw.githubusercontent.com/traced-it/traced-it-android/main/docs/icon-54.png",
+  "description": "A simple app for short text notes, with a prominent timestamp for each entry. Add quantities to your notes using preset formats (S, M, XL, 1/4, 1/2, 3/4) or custom numbers. The uncomplicated interface makes the app easy to use even when you’re busy or distracted. PERFECT FOR - Journaling - Tracking daily routines - Recording workouts - Logging supplements and water intake - Measuring cooking ingredients - Noting simple lab results FEATURES - Add text notes with an optional amount (S, M, XL, 1/4, 1/2, 3/4, 5.813…). - See all your notes with the time elapsed since you wrote.",
+  "source": "https://github.com/traced-it/traced-it-android",
+  "downloadUrl": "https://github.com/traced-it/traced-it-android/releases/download/v1.7.0/app.traced_it.apk",
+  "releaseTag": "1.6.0",
+  "sha256": null,
+  "lastUpdated": "2026-01-02",
+  "featured": false,
+  "tags": [
+    "Note",
+    "Writing"
+  ]
+}
