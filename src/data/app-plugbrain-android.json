@@ -1,0 +1,17 @@
+{
+  "id": "app.plugbrain.android",
+  "name": "PlugBrain",
+  "category": "Reading & Education",
+  "icon": "https://f-droid.org/repo/app.plugbrain.android/en-US/icon_ctecfGhY3thlzVvrUIlRcNjIlc0l8UyvzSlkGbHKU9o=.png",
+  "description": "PlugBrain is an app that encourages regular breaks from distracting apps by blocking access at scheduled intervals. To regain access, you’ll need to solve a math challenge that adjusts in difficulty: the more frequently you use the apps, the harder the challenges become, but the longer you stay away, the easier they get. Features - No ads - No internet required - Blocks distracting apps - Unblock apps by solving math challenges - Difficulty increases with frequent use, decreases with focus.",
+  "source": "https://github.com/msbelaid/PlugBrain",
+  "downloadUrl": "https://github.com/msbelaid/PlugBrain/releases/download/v1.5.4/app-release.apk",
+  "releaseTag": "1.5.4",
+  "sha256": null,
+  "lastUpdated": "2025-11-18",
+  "featured": false,
+  "tags": [
+    "Science & Education",
+    "Time"
+  ]
+}

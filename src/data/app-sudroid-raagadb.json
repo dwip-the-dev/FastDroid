@@ -1,0 +1,18 @@
+{
+  "id": "app.sudroid.raagadb",
+  "name": "RaagaDB",
+  "category": "Reading & Education",
+  "icon": "https://gitlab.com/psuresh/raagadb/-/raw/main/app/src/main/ic_launcher-playstore.png?ref_type=heads",
+  "description": "RaagaDB app is meant to be comprehensive database for Carnatic Raagas.",
+  "source": "https://gitlab.com/psuresh/raagadb",
+  "downloadUrl": "https://gitlab.com/psuresh/raagadb/-/releases/v1.0.6/downloads/apk/app-release.apk",
+  "releaseTag": "1.0.6",
+  "sha256": null,
+  "lastUpdated": "2025-09-06",
+  "featured": false,
+  "tags": [
+    "Reading",
+    "Science & Education",
+    "Writing"
+  ]
+}

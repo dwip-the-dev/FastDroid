@@ -1,0 +1,16 @@
+{
+  "id": "app.slauncher",
+  "name": "Slauncher",
+  "category": "Utilities",
+  "icon": "https://raw.githubusercontent.com/s4nj1th/Slauncher/main/fastlane/metadata/android/en-US/images/icon.png",
+  "description": "Reduce distractions with this minimal launcher.",
+  "source": "https://github.com/s4nj1th/Slauncher",
+  "downloadUrl": "https://github.com/s4nj1th/Slauncher/releases/download/v0.1.4/app-release.apk",
+  "releaseTag": "v0.1.4",
+  "sha256": null,
+  "lastUpdated": "2026-01-18",
+  "featured": false,
+  "tags": [
+    "Launcher"
+  ]
+}
